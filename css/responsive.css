@@ -1,0 +1,100 @@
+.menu-res {
+	display: none;
+} 
+@media all and ( max-width : 500px ){
+
+
+	.header .logo {
+		text-align: center;
+	}
+
+	.menu-res {
+		display: block;
+		text-align: right;
+	}
+
+	.menu-res a {
+		font-size: 20px;
+		color: #202020;
+		text-decoration: none;
+
+	}
+
+	.header .main-menu {
+		display: none;
+	}
+	.header .main-menu ul li{
+		text-align: center !important;
+		display: block;
+	}
+
+	.header .main-menu ul li a {
+		margin: 20px 0px;
+	}
+
+	.container {
+		width: 90% !important;
+		margin: auto ;
+	}
+
+
+	.banner-content h1 {
+		font-size: 40px !important;
+
+	}
+
+	.banner-content {
+	    width: 100% !important;
+	    transform: translate(0px , 100px);
+	    animation : slideUp 1s;
+	}
+
+	.banner-content h4 {
+		font-size: 18px !important;
+	}
+
+	@keyframes slideUp {
+	    0% {
+	        transform: translate(0px , 150px);
+	        opacity: 0;
+	    }
+	    100% {
+	        transform: translate(0px , 100px);
+	        opacity: 1;
+	    }
+	}
+
+	.round {
+		display: none;
+	}
+	.rak {
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+	.rak-black {
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+
+	.rak-red {
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+
+	.banner-content canvas {
+		width: 100% !important;
+	}
+
+	.game-sec {
+		width: 100% !important;
+		text-align: center !important;
+	}
+
+	.game-text h1 {
+		margin-top: 21vh !important;
+		line-height: 38px !important;
+	}
+
+
+
+}
