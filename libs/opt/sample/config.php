@@ -255,6 +255,10 @@
                     'fadeInUp'              => 'fadeInUp',
                     'fadeInLeft'            => 'fadeInLeft',
                     'fadeInRight'           => 'fadeInRight',
+                    'bounceInDown'            => 'bounceInDown',
+                    'bounceInUp'              => 'bounceInUp',
+                    'bounceInLeft'            => 'bounceInLeft',
+                    'bounceInRight'           => 'bounceInRight',
                 ],
                 'default'          => 'none'   
             ],
