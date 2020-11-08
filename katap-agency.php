@@ -2,7 +2,7 @@
 
 
 /*
-	template name: Katapub Projects
+	template name: Katapub Agency
 */
 
 
@@ -179,13 +179,13 @@ get_header();
 						</div>
 						<div class="footer-2">
 							<div class="footer-menu">
-								<?php  
-
-									wp_nav_menu([
-										'theme_location'	=> 'footer-menu'
-									]);
-
-								?>
+								<ul>
+									<li><a href="#">Projets</a></li>
+									<li><a href="#">Agence</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Job</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
 							</div>
 							<div class="social-menu">
 								<ul>
