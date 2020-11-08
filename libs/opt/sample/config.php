@@ -232,10 +232,52 @@
                 'default'       =>  'On trouve parfois ce qu\'on ne charchait pas'
             ],
             [
+                'title'         => 'Sectioin 1 Heading style',
+                'id'            => 's1-heading-style',
+                'type'          => 'typography',
+                'default'       => [
+                    'color'         => '#FFF',
+                    'font-size'     => '6.5',
+                    'font-style'    => '700',
+                    'font-family'   => 'Hind Siliguri',
+                    'text-align'    => 'left',
+                ],
+                'units'         => 'em'
+                
+            ],
+            [
+                'title'         => 'Sectioin 1 Heading Animation effect',
+                'id'            => 's1-heading-animation',
+                'type'          => 'select',
+                'options'       => [
+                    'none'                      => 'None',
+                    'fadeInDown'            => 'fadeInDown',
+                    'fadeInUp'              => 'fadeInUp',
+                    'fadeInLeft'            => 'fadeInLeft',
+                    'fadeInRight'           => 'fadeInRight',
+                ],
+                'default'          => 'none'   
+            ],
+            
+
+            [
                 'title'         => 'Sectioin 1 Subheading',
                 'id'            => 's1-subheading',
                 'type'          => 'textarea',
                 'default'       =>  'Montréal - Saguenay'
+            ],
+            [
+                'title'         => 'Sectioin 1 Subheading Animation effect',
+                'id'            => 's1-subheading-animation',
+                'type'          => 'select',
+                'options'       => [
+                    'none'                      => 'None',
+                    'fadeInDown'            => 'fadeInDown',
+                    'fadeInUp'              => 'fadeInUp',
+                    'fadeInLeft'            => 'fadeInLeft',
+                    'fadeInRight'           => 'fadeInRight',
+                ],
+                'default'          => 'none'   
             ],
             [
                 'title'         => 'Sectioin 1 Background Video URL',
@@ -243,12 +285,35 @@
                 'type'          => 'text',
                 'default'       =>  get_template_directory_uri() . '/videos/eff01.mp4'
             ],
+            [
+                'title'         => 'Sectioin 1 Background ( Image / Color )',
+                'id'            => 'section2_bg',
+                'type'          => 'background',
+            ],
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             [
                 'title'         => 'Sectioin 2 Background Video URL',
                 'id'            => 'section2_bg_video',
                 'type'          => 'text',
                 'default'       =>  get_template_directory_uri() . '/videos/eff02.mp4'
+            ],
+            [
+                'title'         => 'Sectioin 2 Background ( Image / Color )',
+                'id'            => 'section2_bg',
+                'type'          => 'background',
             ],
             [
                 'title'         => 'Sectioin 2 Button Text',
@@ -262,12 +327,26 @@
                 'type'          => 'text',
                 'default'       => 'On y va !'
             ],
+
+
+
+
+
+
+
+
+
             [
-                'title'         => 'Section 3 Background Image',
-                'id'            => 's3-bg-img',
-                'type'          => 'media',
+                'title'         => 'Sectioin 3 Background Video URL',
+                'id'            => 'section3_bg_video',
+                'type'          => 'text',
+            ],
+            [
+                'title'         => 'Sectioin 3 Background ( Image / Color )',
+                'id'            => 'section3_bg',
+                'type'          => 'background',
                 'default'       => [
-                    'url'       => get_template_directory_uri() . '/img/w.gif'
+                    'background-image'      =>  get_template_directory_uri().'/img/w.gif',
                 ]
             ],
 
@@ -289,6 +368,13 @@
                 'type'          => 'color',
                 'default'       => '#000'
             ],
+
+
+
+
+
+
+
             [
                 'title'         => 'Sectioin 4 Video',
                 'id'            => 's4_video_bg',
@@ -296,6 +382,17 @@
                 'default'       => get_template_directory_uri() . '/videos/eff04.mp4'
                 
             ],
+            [
+                'title'         => 'Sectioin 4 Background ( Image / Color )',
+                'id'            => 'section4_bg',
+                'type'          => 'background',
+            ],
+
+
+
+
+
+
             [
                 'title'         => 'Sectioin 4 Brand',
                 'id'            => 's4_brand',
@@ -327,6 +424,10 @@
                 
             ],
 
+
+
+
+
             [
                 'title'         => 'Sectioin 5 Heading',
                 'id'            => 's5_heading',
@@ -339,6 +440,11 @@
         ]
 
     ]);
+
+
+
+
+
 
 
     Redux::setSection($opt_name, [

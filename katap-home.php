@@ -12,6 +12,7 @@
 	<meta name="Resource-type" content="Document" />
 
 
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome/css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/katapa/katapub-Rainbow.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/custom.css" />
@@ -144,8 +145,10 @@
 					<div class="round"></div>
 					
 					<div class="banner-content">
-						<h1 style="margin-top:25vh;font-weight:700;font-size:6.5em;color:#FFF;"><?php echo $katapub['s1-heading']; ?> </h1>
-						<h4 style="margin-top:5vh;font-weight:300;font-size:24px;color:#FFF;"><?php echo $katapub['s1-subheading']; ?></h1>
+						<h1 class="wow <?php echo $katapub['s1-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['s1-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['s1-heading-style']['font-size']; ?>;color:<?php echo $katapub['s1-heading-style']['color']; ?>;"><?php echo $katapub['s1-heading']; ?>
+
+						 </h1>
+						<h4 class="wow <?php echo $katapub['s1-subheading-animation']; ?>" style="margin-top:5vh;font-weight:300;font-size:24px;color:#FFF;"><?php echo $katapub['s1-subheading']; ?></h1>
 					</div>
 
 				
@@ -154,10 +157,12 @@
 		</div>
 	</div>
 
-	<div class="section " id="section0">
+	<div class="section" style="background-color: <?php echo $katapub['section2_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section2_bg']['background-image']; ?>); background-position: center; background-size: cover;" id="section0">
+		<?php if( !empty($katapub['section2_bg_video'] ) ) : ?>
 		<video id="myVideo" loop muted data-autoplay>
 			<source src="<?php echo $katapub['section2_bg_video']; ?>" type="video/mp4">
 		</video>
+		<?php endif; ?>
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
@@ -180,7 +185,17 @@
 		</div>
 	</div>
 
-	<div class="section " style="background-image: url('<?php echo $katapub['s3-bg-img']['url']; ?>'); background-position: center center; background-size: cover;" id="section0">
+	<div class="section " style="background-color: <?php echo $katapub['section3_bg']['background-color']; ?> ; background-image: url(<?php echo $katapub['section3_bg']['background-image']; ?>); background-position: center center; background-size: cover;" id="section0">
+
+
+
+		<?php if(!empty($katapub['section3_bg_video'])) : ?>
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="<?php echo $katapub['section3_bg_video']; ?>" type="video/mp4">
+		</video>
+		<?php endif; ?>
+
+
 
 		<div class="layer">
 			<div class="container rak-black" style="height:100vh;">
@@ -204,10 +219,14 @@
 	</div>
 
 
-	<div class="section " id="section0">
+	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section4_bg']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
+
+		<?php if(!empty($katapub['s4_video_bg'])) : ?>
 		<video id="myVideo" loop muted data-autoplay>
 			<source src="<?php echo $katapub['s4_video_bg']; ?>" type="video/mp4">
 		</video>
+		<?php endif; ?>
+
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
@@ -332,8 +351,12 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fullpage.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/examples.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wow.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/pong.js"></script>
 <script type="text/javascript">
+
+
+		new WOW().init();
 
 	    var myFullpage = new fullpage('#fullpage', { 
 	        

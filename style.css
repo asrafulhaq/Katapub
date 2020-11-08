@@ -357,19 +357,9 @@ html.fp-enabled,
 .banner-content {
     width: 552px;
     transform: translate(30px , 100px);
-    animation : slideUp 1s;
+
 }
 
-@keyframes slideUp {
-    0% {
-        transform: translate(30px , 150px);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(30px , 100px);
-        opacity: 1;
-    }
-}
 
 
 
