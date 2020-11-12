@@ -105,6 +105,16 @@ global $katapub;
 </head>
 <body>
 
+	<!-- PRELOADER START -->
+    
+	<div id="load_screen">
+		<div id="loading">
+			<img class="loading_img" src="<?php echo get_template_directory_uri(); ?>/img/load1.gif" alt=""> <br />
+		</div> <!-- end loading div -->
+	</div> <!-- end load_screen div -->
+	
+    <!-- PRELOADER END -->
+
 <div class="header">
 	<div class="container">
 		<div class="row">

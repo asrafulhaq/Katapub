@@ -11,7 +11,19 @@
 <script type="text/javascript">
 
 
+
+      window.addEventListener("load", function(){
+
+        setInterval(function(){
+          var load_screen = document.getElementById("load_screen");
+          document.body.removeChild(load_screen);
+        }, 0);
+
+      });
+
+
 		new WOW().init();
+
 
 	    var myFullpage = new fullpage('#fullpage', { 
 	        

@@ -448,6 +448,308 @@
 
 
 
+        Redux::setSection($opt_name, [
+        'title'             => 'Agency page Settings',
+        'icon'              => 'el el-heart-empty',
+        'fields'            => [
+
+            [
+                'title'         => 'Sectioin 1 Heading',
+                'id'            => 'as1-heading',
+                'type'          => 'editor',
+                'default'       =>  'Image artist'
+            ],
+            [
+                'title'         => 'Sectioin 1 Heading style',
+                'id'            => 'as1-heading-style',
+                'type'          => 'typography',
+                'default'       => [
+                    'color'         => '#FFF',
+                    'font-size'     => '6.5',
+                    'font-style'    => '700',
+                    'font-family'   => 'Hind Siliguri',
+                    'text-align'    => 'left',
+                ],
+                'units'         => 'em'
+                
+            ],
+            [
+                'title'         => 'Sectioin 1 Heading Animation effect',
+                'id'            => 'as1-heading-animation',
+                'type'          => 'select',
+                'options'       => [
+                    'none'                      => 'None',
+                    'fadeInDown'                => 'fadeInDown',
+                    'fadeInUp'                  => 'fadeInUp',
+                    'fadeInLeft'                => 'fadeInLeft',
+                    'fadeInRight'               => 'fadeInRight',
+                    'bounceInDown'              => 'bounceInDown',
+                    'bounceInUp'                => 'bounceInUp',
+                    'bounceInLeft'              => 'bounceInLeft',
+                    'bounceInRight'             => 'bounceInRight',
+                ],
+                'default'          => 'none'   
+            ],
+            [
+                'title'         => 'Agency Sectioin 1 Background Video URL',
+                'id'            => 'asection_bg_video',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/agency bg1.mp4'
+            ],
+            [
+                'title'         => 'Sectioin 1 Background ( Image / Color )',
+                'id'            => 'asection_bg',
+                'type'          => 'background',
+            ],
+            
+
+
+            [
+                'title'         => 'Sectioin 2 Heading',
+                'id'            => 'as2-heading',
+                'type'          => 'editor',
+                'default'       =>  'Thinkers and creators of original concepts'
+            ],
+
+            [
+                'title'         => 'Sectioin 2 Heading style',
+                'id'            => 'as2-heading-style',
+                'type'          => 'typography',
+                
+                'units'         => 'em'
+                
+            ],
+            [
+                'title'         => 'Sectioin 2 Heading Animation effect',
+                'id'            => 'as2-heading-animation',
+                'type'          => 'select',
+                'options'       => [
+                    'none'                      => 'None',
+                    'fadeInDown'            => 'fadeInDown',
+                    'fadeInUp'              => 'fadeInUp',
+                    'fadeInLeft'            => 'fadeInLeft',
+                    'fadeInRight'           => 'fadeInRight',
+                    'bounceInDown'            => 'bounceInDown',
+                    'bounceInUp'              => 'bounceInUp',
+                    'bounceInLeft'            => 'bounceInLeft',
+                    'bounceInRight'           => 'bounceInRight',
+                ],
+                'default'          => 'none'   
+            ],
+            [
+                'title'         => 'Agency Sectioin 2 Background Video URL',
+                'id'            => 'asection2_bg_video',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/agency bg1.mp4'
+            ],
+            [
+                'title'         => 'Sectioin 2 Background ( Image / Color )',
+                'id'            => 'asection2_bg',
+                'type'          => 'background',
+            ],
+
+            
+           
+            
+        ]
+
+    ]);
+
+
+    
+    Redux::setSection($opt_name, [
+        'title'             => 'Services Page',
+        'icon'              => 'el el-heart-empty',
+        'fields'            => [
+
+            
+
+        ]
+
+    ]);
+
+
+
+
+
+    Redux::setSection($opt_name, [
+        'title'             => 'Job Page',
+        'icon'              => 'el el-heart-empty',
+        'fields'            => [
+
+            [
+                'title'         => 'Footer Heading',
+                'id'            => 'f-heading',
+                'type'          => 'editor',
+                'default'       =>  'Par ici pour notre infolettre'
+            ],
+
+
+        ]
+
+    ]);
+                                                                                               
+    /**
+     * Contact Us page Options start 
+     */
+
+    Redux::setSection($opt_name, [
+        'title'             => 'Contact Page',
+        'icon'              => 'el el-heart-empty',
+        'fields'            => [
+
+            [
+                'title'         => 'Section 1 Heading',
+                'id'            => 'cs1-heading',
+                'type'          => 'textarea',
+                'default'       =>  'On fait les avances, vous les premiers pas'
+            ],
+            [
+                'title'         => 'Sectioin 1 Heading style',
+                'id'            => 'cs1-heading-style',
+                'type'          => 'typography',
+                'default'       => [
+                    'color'         => '#202020',
+                    'font-size'     => '6.5',
+                    'font-style'    => '700',
+                    'font-family'   => 'Hind Siliguri',
+                    'text-align'    => 'left',
+                    'line-height'    => '.8em',
+                ],
+                'units'         => 'em'
+                
+            ],
+            [
+                'title'         => 'Sectioin 1 Heading Animation effect',
+                'id'            => 'cs1-heading-animation',
+                'type'          => 'select',
+                'options'       => [
+                    'none'                      => 'None',
+                    'fadeInDown'                => 'fadeInDown',
+                    'fadeInUp'                  => 'fadeInUp',
+                    'fadeInLeft'                => 'fadeInLeft',
+                    'fadeInRight'               => 'fadeInRight',
+                    'bounceInDown'              => 'bounceInDown',
+                    'bounceInUp'                => 'bounceInUp',
+                    'bounceInLeft'              => 'bounceInLeft',
+                    'bounceInRight'             => 'bounceInRight',
+                ],
+                'default'          => 'none'   
+            ],
+            [
+                'title'         => 'Sectioin 1 background image',
+                'id'            => 'csection1_bg_video',
+                'type'          => 'text',
+            ],
+            [
+                'title'         => 'Sectioin 1 Background ( Image / Color )',
+                'id'            => 'csection1_bg',
+                'type'          => 'background',
+                'default'       => [
+                    'background-color'  => 'rgb(254, 221, 12)',
+                    'background-image'  =>  get_template_directory_uri() . '/img/GifContact.gif'
+                ]
+            ],
+
+
+            [
+                'title'         => 'Section 2 Heading',
+                'id'            => 'cs2-heading',
+                'type'          => 'textarea',
+                'default'       =>  'Combien de temps tu aurais besoin?'
+            ],
+            [
+                'title'         => 'Sectioin 2 Heading style',
+                'id'            => 'cs2-heading-style',
+                'type'          => 'typography',
+                'default'       => [
+                    'color'         => '#202020',
+                    'font-size'     => '6.5',
+                    'font-style'    => '700',
+                    'font-family'   => 'Hind Siliguri',
+                    'text-align'    => 'left',
+                    'line-height'    => '.8em',
+                ],
+                'units'         => 'em'
+                
+            ],
+            [
+                'title'         => 'Sectioin 2 Heading Animation effect',
+                'id'            => 'cs2-heading-animation',
+                'type'          => 'select',
+                'options'       => [
+                    'none'                      => 'None',
+                    'fadeInDown'                => 'fadeInDown',
+                    'fadeInUp'                  => 'fadeInUp',
+                    'fadeInLeft'                => 'fadeInLeft',
+                    'fadeInRight'               => 'fadeInRight',
+                    'bounceInDown'              => 'bounceInDown',
+                    'bounceInUp'                => 'bounceInUp',
+                    'bounceInLeft'              => 'bounceInLeft',
+                    'bounceInRight'             => 'bounceInRight',
+                ],
+                'default'          => 'none'   
+            ],
+            [
+                'title'         => 'Sectioin 2 background Video',
+                'id'            => 'csection2_bg_video',
+                'type'          => 'text',
+
+            ],
+            [
+                'title'         => 'Sectioin 2 Background ( Image / Color )',
+                'id'            => 'csection2_bg',
+                'type'          => 'background',
+                'default'       => [
+                    'background-color'  => '#FFF',
+                ]
+            ],
+
+
+            [
+                'title'         => 'Section 3 Heading',
+                'id'            => 'cs3-heading',
+                'type'          => 'textarea',
+                'default'       =>  'On vous envoie une offre?'
+            ],
+            [
+                'title'         => 'Sectioin 3 Heading style',
+                'id'            => 'cs3-heading-style',
+                'type'          => 'typography',
+                'default'       => [
+                    'color'         => '#202020',
+                    'font-size'     => '6.5',
+                    'font-style'    => '700',
+                    'font-family'   => 'Hind Siliguri',
+                    'text-align'    => 'left',
+                    'line-height'    => '.8em',
+                ],
+                'units'         => 'em'
+                
+            ],
+
+            [
+                'title'         => 'Sectioin 3 background Video',
+                'id'            => 'csection3_bg_video',
+                'type'          => 'text',
+
+            ],
+            [
+                'title'         => 'Sectioin 3 Background ( Image / Color )',
+                'id'            => 'csection3_bg',
+                'type'          => 'background',
+                'default'       => [
+                    'background-color'  => '#202020',
+                ]
+            ],
+
+        ]
+
+    ]);
+
+
+
+
 
 
 
@@ -493,7 +795,7 @@
 
     ]);
 
-     Redux::setSection($opt_name, [
+    Redux::setSection($opt_name, [
         'title'             => 'Social Icons',
         'icon'              => 'el el-heart-empty',
         'fields'            => [
