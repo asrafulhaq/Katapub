@@ -961,6 +961,7 @@ html.fp-enabled,
     animation: shake 5s;
     animation-iteration-count: 1;
     animation-iteration-count: infinite;
+    background-color: #ffd1cc;
 }
 
 .contact-options-section .main-options-menu .options-item p{
@@ -1036,6 +1037,116 @@ html.fp-enabled,
 
 
 }
+
+
+
+.team:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.team {
+    transform: translate(0px, 300px);
+}
+
+.team .team-member {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    position: relative;
+
+}
+.team .team-member:after {
+    content:'';
+    display: block;
+
+    height: 500px;
+    width: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.team .team-member:last-child:after {
+    content:'';
+    display: block;
+
+    height: 500px;
+    width: 0px;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.team .team-member img {
+    margin-bottom: -50px;
+}
+
+.team .team-member h3 {
+    font-size: 3em;
+    font-family: "Hind Siliguri",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: #202020;
+}
+
+.team .team-member p {
+    font-family: "Libre Baskerville" !important;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #888888;
+}
+
+.team .team-member .btn-team {
+    background-image: url('img/btn/btn1.png');
+    width: 150px;
+    height: 150px;
+    margin:100px  auto 0px; 
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+.team .team-member .btn-team:hover {
+    background-image: url('img/btn/btn2.png');
+}
+
+.job-animate-img {
+    margin-top: 94px;
+}
+
+.job-animate-img img{
+    width: 100%;
+}
+
+.arr-down  {
+    text-align: center;
+}
+
+
+.arr-down a {
+    display: inline-block;
+    color: #202020;
+    padding: 10px;
+    border: 1px solid #202020;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

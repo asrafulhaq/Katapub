@@ -8,6 +8,8 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wow.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/pong.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/particles.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
 <script type="text/javascript">
 
 
@@ -122,9 +124,8 @@ $('#sub_eff').click(function(e){
 
 
 
-
-
 </script>
+
 
 </body>
 </html>

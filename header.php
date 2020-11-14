@@ -18,6 +18,7 @@ global $katapub;
 
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/thimify/themify-icons.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/katapa/katapub-Rainbow.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/custom.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
@@ -65,6 +66,7 @@ global $katapub;
 		position: absolute;
 		z-index: 4;
 		width:100%;
+	
 
 		/*
 		* Preventing flicker on some browsers

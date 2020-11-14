@@ -2,7 +2,7 @@
 
 
 /*
-	template name: Katapub Contact
+	template name: Katapub Services
 */
 
 

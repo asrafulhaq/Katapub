@@ -15,7 +15,7 @@ get_header();
 <div id="fullpage">
 
 
-	
+	<!-- ---------------- -->
 	<div class="section" style="background-color: <?php echo $katapub['asection_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['asection_bg']['background-image']; ?>); background-position: center; background-size: cover;" id="section0">
 
 
@@ -45,8 +45,8 @@ get_header();
 	</div>
 
 
-
-		<div class="section" style="background-color: <?php echo $katapub['asection2_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['asection2_bg']['background-image']; ?>); background-position: center; background-size: cover;" id="section0">
+	<!-- ------------------------ -->
+	<div id="particles-js" class="section" style="background-color: <?php echo $katapub['asection2_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['asection2_bg']['background-image']; ?>); background-position: center; background-size: cover;">
 
 
 		<?php if(!empty($katapub['asection2_bg_video'])) : ?>
@@ -56,19 +56,97 @@ get_header();
 		<?php endif; ?>
 
 
-		<div class="layer">
-			<div class="container " style="height:100vh;">
+		<div id="" class="layer">
+			<div class="container" style="height:100vh;">
 
 					
-					<div style="z-index:99999999999;" class="banner-content">
-						<h1 class=" wow<?php echo $katapub['as2-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['as2-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['as2-heading-style']['font-size']; ?>;color:red; z-index:99999999999;"><?php echo $katapub['as2-heading']; ?>
+					<div style="z-index:99999999999;" class="banner-content" id="">
+						<h1 class=" wow<?php echo $katapub['as2-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['as2-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['as2-heading-style']['font-size']; ?>;color:<?php echo $katapub['as2-heading-style']['color']; ?>; z-index:99999999999;"><?php echo $katapub['as2-heading']; ?>
 
 
 
 						 </h1>
-						<h4 class="wow <?php echo $katapub['as2-subheading-animation']; ?>" style="margin-top:5vh;font-weight:300;font-size:24px;color:#FFF;"><?php echo $katapub['as2-subheading']; ?></h1>
+	
 					</div>
 
+				
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- ---------------------- -->
+	<div id="particles-js" class="section" style="background-color: #EAECED;">
+
+
+
+
+		<div id="" class="layer">
+			<div class="container rak-gray" style="height:100vh;">
+
+
+				<div class="team">
+					<div class="team-member">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<h3>Emilie <br> Fillion</h3>
+						<p>Présidente <br> Directrice à la création</p>
+						<div class="btn-team"></div>
+					</div>
+
+					<div class="team-member">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<h3>Emilie <br> Fillion</h3>
+						<p>Présidente <br> Directrice à la création</p>
+						<div class="btn-team"></div>
+					</div>
+
+					<div class="team-member">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<h3>Emilie <br> Fillion</h3>
+						<p>Présidente <br> Directrice à la création</p>
+						<div class="btn-team"></div>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+		<div id="particles-js" class="section" style="background-color: #EAECED;">
+
+
+
+
+		<div id="" class="layer">
+			<div class="container rak-gray" style="height:100vh;">
+
+
+				<div class="team">
+					<div class="team-member">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<h3>Emilie <br> Fillion</h3>
+						<p>Présidente <br> Directrice à la création</p>
+						<div class="btn-team"></div>
+					</div>
+
+					<div class="team-member">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<h3>Emilie <br> Fillion</h3>
+						<p>Présidente <br> Directrice à la création</p>
+						<div class="btn-team"></div>
+					</div>
+
+					<div class="team-member">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<h3>Emilie <br> Fillion</h3>
+						<p>Présidente <br> Directrice à la création</p>
+						<div class="btn-team"></div>
+					</div>
+					
+				</div>
 				
 				
 			</div>
@@ -84,7 +162,7 @@ get_header();
 
 
 
-	<div class="section " id="section0" style="background-color: <?php echo $katapub['fbgc']; ?>;">
+	<div class="section" id="" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
 			<div class="container sec-footer rak-gray" style="height:100vh;">
 					

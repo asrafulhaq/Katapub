@@ -2,7 +2,7 @@
 
 
 /*
-	template name: Katapub Contact
+	template name: Katapub job
 */
 
 
@@ -18,20 +18,16 @@ global $katapub;
 
 
 	
-	<div class="section " id="section0" style="background-color: <?php echo $katapub['csection1_bg']['background-color']; ?>; background-image:url( '<?php echo $katapub['csection1_bg']['background-image']; ?>') ; background-size: 1000px auto; background-position: bottom right; background-repeat: no-repeat;">
+	<div class="section " id="section0" style="background-color: <?php echo $katapub['js1-bg']['background-color']; ?>; background-image:url( '<?php echo $katapub['js1-bg']['background-image']; ?>') ; background-size: cover; background-position: bottom right; background-repeat: no-repeat;">
 
-		<?php if(!empty($katapub['csection1_bg_video'])) : ?>
-		<video id="myVideo" loop muted data-autoplay>
-			<source src="<?php echo $katapub['csection1_bg_video']; ?>" >
-		</video>
-		<?php endif; ?>
+
 		<div class="layer">
 			<div class="container rak" style="height:100vh;">
 					
 					<div class="round"></div>
 					
 					<div class="banner-content">
-						<h1 class="wow <?php echo $katapub['cs1-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['cs1-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['cs1-heading-style']['font-size']; ?>;color:<?php echo $katapub['cs1-heading-style']['color']; ?>; line-height:<?php echo $katapub['cs1-heading-style']['line-height']; ?>;"><?php echo $katapub['cs1-heading']; ?>
+						<h1 class="" style="margin-top:25vh;font-weight:700;font-size:13em;color:#FFF;"><?php echo $katapub['js1-heading']; ?>
 
 						 </h1>
 						
@@ -46,7 +42,7 @@ global $katapub;
 
 
 
-	<div class="section " id="section2" style="background-color: <?php echo $katapub['csection2_bg']['background-color']; ?>; background-image:url( '<?php echo $katapub['csection2_bg']['background-image']; ?>') ; background-size: 1000px auto; background-position: bottom right; background-repeat: no-repeat;">
+	<div class="section " id="section2" style="background-color: #E8E8E9;">
 
 		<?php if(!empty($katapub['csection2_bg_video'])) : ?>
 		<video id="myVideo" loop muted data-autoplay>
@@ -58,15 +54,23 @@ global $katapub;
 
 
 		<div class="layer">
-			<div class="container " style="height:100vh;">
+			<div class="container rak-gray" style="height:100vh;">
 					
 					
-					
+					<div class="job-animate-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/ani.gif" alt="">
+						</div>
 					<div class="banner-content">
-						<h2 class="wow <?php echo $katapub['cs2-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['cs2-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['cs2-heading-style']['font-size']; ?>;color:<?php echo $katapub['cs2-heading-style']['color']; ?>; line-height:<?php echo $katapub['cs2-heading-style']['line-height']; ?>;"><?php echo $katapub['cs2-heading']; ?>
-
+						
+						<h2 class="" style="margin-top:0vh; font-weight:700; font-size:6.5em; color:#202020; line-height:72px; transform: translate(100px, -49px);">
+							Je veux postuler maintenant
 						 </h2>
 						
+						<div class="arr-down">
+							<a href="#"><i class="ti-arrow-down"></i></a> 
+						</div>
+
+
 					</div>
 
 				

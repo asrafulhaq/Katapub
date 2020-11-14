@@ -515,6 +515,13 @@
                 'title'         => 'Sectioin 2 Heading style',
                 'id'            => 'as2-heading-style',
                 'type'          => 'typography',
+                'default'       => [
+                    'color'     => '#FFF',
+                    'font-size' => '6.5em',
+                    'font-family'   => 'Hind Siliguri',
+                    'font-weight'   => '700'
+
+                ],
                 
                 'units'         => 'em'
                 
@@ -540,12 +547,16 @@
                 'title'         => 'Agency Sectioin 2 Background Video URL',
                 'id'            => 'asection2_bg_video',
                 'type'          => 'text',
-                'default'       =>  get_template_directory_uri() . '/videos/agency bg1.mp4'
+
             ],
             [
                 'title'         => 'Sectioin 2 Background ( Image / Color )',
                 'id'            => 'asection2_bg',
                 'type'          => 'background',
+                'default'       => [
+                    'background-color'  => '#FF00FF',
+
+                ]
             ],
 
             
@@ -578,10 +589,30 @@
         'fields'            => [
 
             [
-                'title'         => 'Footer Heading',
-                'id'            => 'f-heading',
+                'title'         => 'Section 1 Heading',
+                'id'            => 'js1-heading',
                 'type'          => 'editor',
-                'default'       =>  'Par ici pour notre infolettre'
+                'default'       =>  'Job'
+            ],
+            [
+                'title'         => 'Section 1 Heading Style',
+                'id'            => 'js1-heading-style',
+                'type'          => 'typography',
+                'unit'          => 'em',
+                'default'       =>  [
+                        'color'         => '#FFF',
+                        'font-size'     => '9',
+                        'font-family'   => 'Hind Siliguri',
+                        'font-weight'   => '700'
+                ],
+            ],
+            [
+                'title'         => 'Section 1 background',
+                'id'            => 'js1-bg',
+                'type'          => 'background',
+                'default'       =>  [
+                    'background-image'  => get_template_directory_uri() . '/img/job.gif',
+                ]
             ],
 
 
