@@ -1,8 +1,14 @@
 .menu-res {
 	display: none;
 } 
+
+
 @media all and ( max-width : 500px ){
 
+
+	/**
+	* Home page Responsive code
+	*/
 
 	.header .logo {
 		text-align: center;
@@ -40,7 +46,17 @@
 
 	.banner-content h1 {
 		font-size: 40px !important;
+		margin-top: 5vh;
+		font-weight: 700;
+		font-size: 5em;
+		width: 64%;
+		line-height: 40px !important;
+		color: #202020;
 
+	}
+
+	.banner-content .footer-mobile {
+		line-height: 40px !important;
 	}
 
 	.banner-content {
@@ -96,5 +112,142 @@
 	}
 
 
+
+	.footer-section-content .footer-1 h3 {
+	    text-transform: uppercase;
+	    font-size: 2em;
+	    font-weight: 700;
+	    position: absolute;
+	    bottom: 34vh;
+	    left: 5%;
+	    transform: rotate(0deg);
+	
+	}
+
+	.footer-section-content .footer-2 {
+		position: absolute;
+		bottom: 4.9vh;
+		left: 5%;
+	}
+
+
+	.footer-section-content .footer-3 {
+		position: absolute;
+		bottom: 5.9vh;
+		right: 5%;
+		text-align: right;
+	}
+
+
+	/**
+	* Agency Responsive code
+	*/
+	.team {
+		transform: translate(0px, 130px);
+	}
+	.team .team-member {
+		width: 100% !important;
+	}
+	.team .team-member:after {
+		width: 0px;
+	}
+
+	.team .team-member .btn-team {
+		margin: 20px auto 0px;
+	}
+
+	.btnVFRond {
+		left: 112px;
+	} 
+
+
+	/**
+	* Services Responsive code
+	*/
+
+	
+	h1.kcs2 {
+		margin-top: 3vh !important;
+		margin-left: 0% !important;
+		font-weight: 700;
+		font-size: 7.5em;
+		color: #202020;
+	}
+
+
+	.list-content {
+		width: 100% !important;
+	}
+
+	.list-content .circle {
+		float: none !important;
+		margin: auto;
+		width: 91px;
+
+	}
+
+	.list-content .content {
+		width: 100% !important;
+	}
+
+	.jobsec02 {
+		transform: translate(0px , 0px) !important;
+		margin-top: 0vh;
+		font-weight: 700;
+		font-size: 3.5em !important;
+		color: #202020;
+		line-height: 52px !important;
+	}
+
+	.list-content .circle span {
+		font-size: 50px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.list-content .content h4 {
+		text-align: center;
+	}
+	
+
+	.list-content .content p {
+		text-align: center;
+	}
+	.list-content .content {
+		margin-top: 0px !important;
+	}
+
+	.list-far {
+		transform: translate(0px, 181px) !important;
+	}
+
+
+
+	.services-tabs {
+		margin-top: 14vh !important;
+	}
+
+	.services-tabs .content-circle {
+		width: 100%;
+		float: none;
+	}
+
+	.content-circle h3 {
+		padding-left: 0px;
+	}
+
+	.content-circle p {
+		padding-left: 0px;
+	}
+	.content-menu {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.content-menu ul li {
+		display: inline-block;
+		font-size: 20px;
+	}
 
 }

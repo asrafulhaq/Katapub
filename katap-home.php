@@ -2,7 +2,7 @@
 
 
 /*
-	template name: Katapub Projects
+	template name: Katapub Home
 */
 
 
@@ -178,6 +178,7 @@ get_header();
 							<h3><?php echo nl2br( $katapub['f-subheading'] ); ?></h3>
 						</div>
 						<div class="footer-2">
+							
 							<div class="footer-menu">
 								<?php  
 
@@ -198,6 +199,23 @@ get_header();
 							</div>
 						</div>
 						<div class="footer-3">
+							<div class="gurantee">
+								<form id="email_subs" action="">
+									<label for="inp" class="inp">
+										
+									  <input type="text" id="inp" placeholder="&nbsp;">
+									  <span class="label">Courriel</span>
+									  <svg width="120px"  height="26px" viewBox="0 0 120 26">
+									    <path style="color:red;" d="M0,25 C21,25 46,25 74,25 C102,25 118,25 120,25"></path>
+									  </svg>
+									  <span class="border"></span>
+									  <button id="sub_btn" type="submit"><i class="ti-arrow-right"></i></button>
+									  <img src="<?php echo get_template_directory_uri(); ?>/img/ghurantee.gif" alt="">
+									  <span id="success_msg"></span>
+									</label>
+								</form>
+							</div>
+
 							<div class="copy-right">
 								<a href="#">
 									<img src="<?php echo $katapub['logo-footer-upload']['url']; ?>" alt="">

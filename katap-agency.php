@@ -46,7 +46,7 @@ get_header();
 
 
 	<!-- ------------------------ -->
-	<div id="particles-js" class="section" style="background-color: <?php echo $katapub['asection2_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['asection2_bg']['background-image']; ?>); background-position: center; background-size: cover;">
+	<div id="particles-js" class="section partical" style="background-color: <?php echo $katapub['asection2_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['asection2_bg']['background-image']; ?>); background-position: center; background-size: cover; position: relative;">
 
 
 		<?php if(!empty($katapub['asection2_bg_video'])) : ?>
@@ -87,23 +87,23 @@ get_header();
 
 				<div class="team">
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/team/01.png" alt="">
 						<h3>Emilie <br> Fillion</h3>
 						<p>Présidente <br> Directrice à la création</p>
 						<div class="btn-team"></div>
 					</div>
 
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
-						<h3>Emilie <br> Fillion</h3>
-						<p>Présidente <br> Directrice à la création</p>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/team/02.png" alt="">
+						<h3>Sylvain  <br> Thériault</h3>
+						<p>Directeur artistique <br> Designer graphique</p>
 						<div class="btn-team"></div>
 					</div>
 
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
-						<h3>Emilie <br> Fillion</h3>
-						<p>Présidente <br> Directrice à la création</p>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/team/03.png" alt="">
+						<h3>Ghislain  <br> Dufour</h3>
+						<p>Stratège  <br> com</p>
 						<div class="btn-team"></div>
 					</div>
 					
@@ -126,21 +126,21 @@ get_header();
 
 				<div class="team">
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/team/04.png" alt="">
 						<h3>Emilie <br> Fillion</h3>
 						<p>Présidente <br> Directrice à la création</p>
 						<div class="btn-team"></div>
 					</div>
 
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/team/05.png" alt="">
 						<h3>Emilie <br> Fillion</h3>
 						<p>Présidente <br> Directrice à la création</p>
 						<div class="btn-team"></div>
 					</div>
 
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/imgRose.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/team/06.png" alt="">
 						<h3>Emilie <br> Fillion</h3>
 						<p>Présidente <br> Directrice à la création</p>
 						<div class="btn-team"></div>
@@ -198,6 +198,22 @@ get_header();
 							</div>
 						</div>
 						<div class="footer-3">
+							<div class="gurantee">
+								<form id="email_subs" action="">
+									<label for="inp" class="inp">
+										
+									  <input type="text" id="inp" placeholder="&nbsp;">
+									  <span class="label">Courriel</span>
+									  <svg width="120px"  height="26px" viewBox="0 0 120 26">
+									    <path style="color:red;" d="M0,25 C21,25 46,25 74,25 C102,25 118,25 120,25"></path>
+									  </svg>
+									  <span class="border"></span>
+									  <button id="sub_btn" type="submit"><i class="ti-arrow-right"></i></button>
+									  <img src="<?php echo get_template_directory_uri(); ?>/img/ghurantee.gif" alt="">
+									  <span id="success_msg"></span>
+									</label>
+								</form>
+							</div>
 							<div class="copy-right">
 								<a href="#">
 									<img src="<?php echo $katapub['logo-footer-upload']['url']; ?>" alt="">

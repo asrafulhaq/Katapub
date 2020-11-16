@@ -122,7 +122,7 @@ global $katapub;
 		<div class="row">
 			<div class="col-md-3">
 				<div class="logo">
-					<a href="#"><img style="width:<?php echo $katapub['logo-width']; ?>;" src="<?php echo  $katapub['logo-upload']['url']; ?>" alt=""></a>
+					<a href="<?php echo  get_home_url(); ?>"><img style="width:<?php echo $katapub['logo-width']; ?>;" src="<?php echo  $katapub['logo-upload']['url']; ?>" alt=""></a>
 				</div>
 			</div>
 			<div class="col-md-9">

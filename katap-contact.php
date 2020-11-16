@@ -26,9 +26,9 @@ global $katapub;
 		</video>
 		<?php endif; ?>
 		<div class="layer">
-			<div class="container rak" style="height:100vh;">
+			<div class="container rak-gray" style="height:100vh;">
 					
-					<div class="round"></div>
+	
 					
 					<div class="banner-content">
 						<h1 class="wow <?php echo $katapub['cs1-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['cs1-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['cs1-heading-style']['font-size']; ?>;color:<?php echo $katapub['cs1-heading-style']['color']; ?>; line-height:<?php echo $katapub['cs1-heading-style']['line-height']; ?>;"><?php echo $katapub['cs1-heading']; ?>
@@ -55,7 +55,9 @@ global $katapub;
 		<?php endif; ?>
 
 
-
+		<div class="side-text">
+			<h2>POUR LES 6 <br> PROCHAINS MOIS</h2>
+		</div>
 
 		<div class="layer">
 			<div class="container rak-gray" style="height:100vh;">
@@ -147,7 +149,7 @@ global $katapub;
 
 
 		<div class="layer">
-			<div class="container rak-gray" style="height:100vh;">
+			<div class="container rak" style="height:100vh;">
 					
 					<div class="contact-options-section">
 						<ul>
@@ -239,6 +241,22 @@ global $katapub;
 							</div>
 						</div>
 						<div class="footer-3">
+							<div class="gurantee">
+								<form id="email_subs" action="">
+									<label for="inp" class="inp">
+										
+									  <input type="text" id="inp" placeholder="&nbsp;">
+									  <span class="label">Courriel</span>
+									  <svg width="120px"  height="26px" viewBox="0 0 120 26">
+									    <path style="color:red;" d="M0,25 C21,25 46,25 74,25 C102,25 118,25 120,25"></path>
+									  </svg>
+									  <span class="border"></span>
+									  <button id="sub_btn" type="submit"><i class="ti-arrow-right"></i></button>
+									  <img src="<?php echo get_template_directory_uri(); ?>/img/ghurantee.gif" alt="">
+									  <span id="success_msg"></span>
+									</label>
+								</form>
+							</div>
 							<div class="copy-right">
 								<a href="#">
 									<img src="<?php echo $katapub['logo-footer-upload']['url']; ?>" alt="">

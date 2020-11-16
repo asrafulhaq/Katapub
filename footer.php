@@ -60,67 +60,40 @@
 
 
 
-$('#subs_form').submit(function(e){
 
-    e.preventDefault();
 
-    let subs = $('input#inp').val();
+  $('form#email_subs').submit(function(e){
+      e.preventDefault();
 
-    let mail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    if ( mail.test(subs) ) {
+      let email = $('form#email_subs #inp').val();
         
-        $('#form_effect').show();
-        $('.inp span.border').hide();
-        $('.inp svg').hide();
-        $('.inp input').attr('disabled', '');
-        $('.inp input').val('');
+      let mail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-        setTimeout(function(){
-           $('#form_effect').remove();
-          // $('#mmmsg').html('Merci de vous etre abonne');
-          $('#sub_eff').html('<i class="ti-check" aria-hidden="true"></i>').css('color', 'green').css('cursor', 'inherit').css('font-size', '24px').css('top', '-13px');
-        }, 1000);
-    }else {
+      if ( mail.test(email) ) {
+          
+          $('form#email_subs .inp img').show();
+          $('form#email_subs #inp').hide();
+          $('form#email_subs span.border').hide();
+          $('.gurantee .inp button').css('bottom', '-52px');
+          $('form#email_subs .inp svg').hide();
+          $('.gurantee .inp .label ').hide();
+         
 
-        alert('Invalid email address !');
-
-    }
-
-
-});
+          setTimeout(function(){
+            $('form#email_subs .inp img').hide();
+            $('form#email_subs #sub_btn').html('<i class="ti-check"></i>').css('color', 'green');
+            $('form#email_subs #success_msg').html('Merci Beaucoup').css('color', 'green');
+          }, 1000);
 
 
-$('#sub_eff').click(function(e){
+      }else {
 
-    e.preventDefault();
+          alert('Invalid email address !');
 
-    let subs = $('input#inp').val();
-
-    let mail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    if ( mail.test(subs) ) {
-        
-        $('#form_effect').show();
-        $('.inp span.border').hide();
-        $('.inp svg').hide();
-        $('.inp input').attr('disabled', '');
-        $('.inp input').val('');
-
-        setTimeout(function(){
-           $('#form_effect').remove();
-          // $('#mmmsg').html('Merci de vous etre abonne');
-          $('#sub_eff').html('<i class="ti-check" aria-hidden="true"></i>').css('color', 'green').css('cursor', 'inherit').css('font-size', '24px').css('top', '-13px').css('margin-top', '24px');
-
-        }, 1000);
-    }else {
-
-        alert('Invalid email address !');
-
-    }
+      }
 
 
-});
+  });
 
 
 

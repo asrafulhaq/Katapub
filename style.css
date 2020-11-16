@@ -6,9 +6,6 @@
 	Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda modi fugiat laboriosam aspernatur sed reprehenderit eaque maiores repellendus, molestias deserunt. 
 	Tags: Salauddin, vai
 	version: 1.1.1
-
-
-
 */
 
 
@@ -278,6 +275,13 @@ html.fp-enabled,
     border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.rak-v {
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
 
 
 
@@ -382,6 +386,17 @@ html.fp-enabled,
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 1000px;
 }
+
+.round-gray {
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    bottom: -30%;
+    right: -10%;
+    border: 1px solid gray;
+    border-radius: 1000px;
+}
+
 
 
 /* button code */
@@ -972,6 +987,562 @@ html.fp-enabled,
 }
 
 
+
+
+.team:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.team {
+    transform: translate(0px, 300px);
+}
+
+.team .team-member {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    position: relative;
+
+}
+.team .team-member:after {
+    content:'';
+    display: block;
+
+    height: 500px;
+    width: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.team .team-member:last-child:after {
+    content:'';
+    display: block;
+
+    height: 500px;
+    width: 0px;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.team .team-member img {
+    margin-bottom: 0px;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.team .team-member h3 {
+    font-size: 3em;
+    font-family: "Hind Siliguri",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: #202020;
+}
+
+.team .team-member p {
+    font-family: "Libre Baskerville" !important;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #888888;
+}
+
+.team .team-member .btn-team {
+    background-image: url('img/btn/btn1.png');
+    width: 150px;
+    height: 150px;
+    margin:100px  auto 0px; 
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+.team .team-member .btn-team:hover {
+    background-image: url('img/btn/btn2.png');
+}
+
+.job-animate-img {
+    margin-top: 94px;
+}
+
+.job-animate-img img{
+    width: 100%;
+}
+
+.arr-down  {
+    text-align: center;
+}
+
+
+
+.arr-down a {
+    display: inline-block;
+    color: #202020;
+    padding: 10px;
+    border: 1px solid #202020;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+
+.services-tabs {
+    margin-top: 27vh;
+}
+.services-tabs:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.content-circle {
+    width: 70%;
+    float: left;
+}
+
+.content-menu {
+    width: 30%;
+    float: left;
+}
+
+.content-menu ul li {
+    color: rgb(58, 58, 58);
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.content-menu ul li:hover {
+    color: rgb(228, 56, 137);
+}
+
+.content-circle h3 {
+    font-size: 3em !important;
+    font-weight: 700 !important;
+    padding-left: 80px;
+}
+
+.content-circle p {
+    font-family: "Hind Siliguri",Tahoma,Geneva,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #888888;
+    padding-left: 150px;
+    width: 80%;
+}
+
+
+.list-near {
+    transform: translate(0px, 180px);
+}
+
+.list-far {
+    transform: translate(470px, 180px);
+}
+.list-content:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.list-content {
+    width: 500px;
+
+}
+
+.list-content .circle {
+    width: 154px;
+    float: left;
+}
+
+.list-content .circle span {
+    display: inline-block;
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    text-align: center;
+    border-radius: 50%;
+    padding: 20px;
+    box-sizing: content-box;
+    font-family: "Nanum Myeongjo";
+}
+
+.list-content .content {
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+}
+
+.list-content .content  h4 {
+    font-family: "Hind Siliguri",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 2.8em;
+    line-height: 1em;
+}
+
+.list-content .content p {
+    font-size: 1.4em;
+    color: white;
+    font-family: "Libre Baskerville" !important;
+    font-style: italic !important;
+    line-height: 1em;
+    
+}
+
+.side-text {
+    font-family: "Hind Siliguri",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    color: #202020;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 75%;
+    right: 358px;
+}
+
+.side-text h2 {
+    font-size: 25px !important;
+}
+
+.side-social {
+    position: absolute;
+    right: -103px;
+    top: 45%;
+    transform: rotate(90deg);
+}
+.side-social ul li {
+    display: inline-block;
+}
+.side-social ul li a {
+    font-size: 2em;
+    color: #FFF;
+    display: inline;
+    padding: 5px;
+}
+
+.side-social h2 {
+    color: white;
+    width: initial;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 0.9;
+
+}
+
+.partical   canvas {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+
+
+/* Gurantee */
+
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.inp .label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 16px;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.inp svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 26px;
+  fill: none;
+}
+.inp svg path {
+  stroke: #e43889;
+  stroke-width: 2;
+}
+.inp svg path d {
+  transition: all 0.2s ease;
+}
+.inp .border {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  height: 2px;
+  right: 0;
+  background: #c8ccd4;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.inp input:not(:placeholder-shown) + span {
+  color: #5a667f;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus {
+  background: none;
+  outline: none;
+}
+.inp input:focus + span {
+  color: #e43889;
+  transform: translateY(-26px) scale(0.75);
+  transition-delay: 0.1s;
+}
+.inp input:focus + span + svg path {
+  stroke: #e43889;
+  animation: elasticInput 0.4s ease forwards;
+}
+.inp input:focus + span + svg + .border {
+  background: #e43889;
+}
+.dribbble {
+  position: fixed;
+  right: 20px;
+  bottom: 15px;
+  transition: all 0.2s ease;
+}
+.dribbble span {
+  font-size: 28px;
+  color: #9098a9;
+}
+@-moz-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@-webkit-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@-o-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+
+
+.gurantee {
+    position: absolute;
+    left: -430px;
+    top: -391%;
+    width: 420px;
+}
+
+.gurantee .inp .label {
+    top: -10px;
+    color: #e43889;
+
+}
+
+.inp .border  {
+    background: #e43889;
+}
+
+.gurantee .inp button {
+    position: absolute;
+    right: -144px;
+    bottom: 5px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    color: #e43889;
+    font-size: 20px;
+}
+.gurantee .inp button:focus {
+    border: 0px solid transparent;
+    outline: 0px solid transparent;
+
+}
+
+.gurantee .inp input {
+    margin-bottom: 10px;
+}
+
+.gurantee .inp img {
+
+    position: absolute;
+        width: 166%;
+        left: -17px;
+        top: -80px;
+        display: none;
+}
+
+.gurantee #success_msg {
+    position: absolute;
+    right: -51px;
+    bottom: -45px;
+    width: 300px;
+}
+
+.featured-list {
+    width: 100%;
+}
+
+.featured-list:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.sec0 {
+    width: 50%;
+    float: left;
+}
+
+
+.sec0 ul li {
+    color: white !important;
+    font-family: "Libre Baskerville";
+    font-style: italic;
+    font-weight: 500 !important;
+    cursor: pointer;
+    font-size: 1.7em !important;
+    padding: 20px 0px;
+    position: relative;
+    display: table;
+
+}
+
+.sec0 ul li:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 15px;
+    height: 15px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: -23px;
+    top: 31px;
+}
+
+.sec0 ul li:hover:after {
+    background-color: #f109d4;
+}
+
+
+.circle-box {
+    width: 100%;
+    text-align: center;
+
+}
+
+.circle-box .items {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius :50%;
+    cursor: pointer;
+    margin: 20px;
+    
+    
+}
+
+.circle-box .items span {
+    transform: translate(0px, 58px);
+    font-family: "Libre Baskerville" !important;
+    font-size: 20px;
+    font-style: italic;
+    display: inline-block;
+}
+.circle-box .items:hover {
+    background-color: #ffd1cc;
+} 
+
+
+.guranteee-text {
+    text-align: left;
+    font-size: 5.9em;
+    color: white;
+    font-weight: 700;
+    margin-right: -100px;
+    line-height: 0.8;
+    transform: translate(165px, 0px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes shake {
     
     0%, 100% {
@@ -1037,122 +1608,4 @@ html.fp-enabled,
 
 
 }
-
-
-
-.team:after {
-    content:'';
-    display: block;
-    clear: both;
-}
-
-.team {
-    transform: translate(0px, 300px);
-}
-
-.team .team-member {
-    width: 33.33%;
-    float: left;
-    text-align: center;
-    position: relative;
-
-}
-.team .team-member:after {
-    content:'';
-    display: block;
-
-    height: 500px;
-    width: 2px;
-    background-color: #000;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-.team .team-member:last-child:after {
-    content:'';
-    display: block;
-
-    height: 500px;
-    width: 0px;
-    background-color: #000;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-.team .team-member img {
-    margin-bottom: -50px;
-}
-
-.team .team-member h3 {
-    font-size: 3em;
-    font-family: "Hind Siliguri",Arial,Helvetica,sans-serif;
-    font-weight: 700;
-    color: #202020;
-}
-
-.team .team-member p {
-    font-family: "Libre Baskerville" !important;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    color: #888888;
-}
-
-.team .team-member .btn-team {
-    background-image: url('img/btn/btn1.png');
-    width: 150px;
-    height: 150px;
-    margin:100px  auto 0px; 
-    background-size: 100% 100%;
-    cursor: pointer;
-
-}
-.team .team-member .btn-team:hover {
-    background-image: url('img/btn/btn2.png');
-}
-
-.job-animate-img {
-    margin-top: 94px;
-}
-
-.job-animate-img img{
-    width: 100%;
-}
-
-.arr-down  {
-    text-align: center;
-}
-
-
-.arr-down a {
-    display: inline-block;
-    color: #202020;
-    padding: 10px;
-    border: 1px solid #202020;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    box-sizing: content-box;
-    font-size: 20px;
-    line-height: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
