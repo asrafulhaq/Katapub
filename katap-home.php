@@ -70,6 +70,14 @@ get_header();
 
 
 
+
+
+
+
+
+
+
+
 		<?php if(!empty($katapub['section3_bg_video'])) : ?>
 		<video id="myVideo" loop muted data-autoplay>
 			<source src="<?php echo $katapub['section3_bg_video']; ?>" type="video/mp4">
@@ -78,8 +86,54 @@ get_header();
 
 
 
+
+
+		
+
+
+
 		<div class="layer">
-			<div class="container rak-black" style="height:100vh;">
+			<div class="container" style="height:100vh; position: relative;">
+
+				<div class="side-social" style="right: -82px; top:22%;">
+					
+					<div class="social-text">
+						<h2 style="color:#202020;">SUIVEZ <br> NOS PROJETS </h2>
+					</div>
+					<div class="social-icon">
+						<ul>
+							<li><a style="color:#202020;" href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a style="color:#202020;" href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a style="color:#202020;" href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a style="color:#202020;" href="#"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="line-effects" style="height:100vh; position: relative; top:0vh;left: -44vh;">	  
+					<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+				                 
+		                <style>
+		                	.elastic canvas {
+		                		height: 100vh !important;
+		                	}
+		                	.p-col {
+		                		height: 100vh !important;
+		                	}
+		                </style>
+		                <main class="p-grid scroller" style=""> 
+
+							<a style="transform: translate(0px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+		                         <div class="elastic elasticbox"></div>
+		                    </a> 
+
+		                    <a style="transform: translate(475px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+		                         <div class="elastic elasticbox"></div>
+		                    </a> 
+
+						</main>
+
+				</div>
 
 				
 				<div class="section content">
@@ -91,7 +145,7 @@ get_header();
 						}
 
 					</style>
-					<a href="#" class="LinkBtnRond"><div style="background-color:<?php echo $katapub['s3_grab_bg']; ?>;" class="btnVFRond"><h4><?php echo $katapub['s3_grab_text']; ?><h4></div></a>
+					<a href="#" class="LinkBtnRond"><div style="background-color:<?php echo $katapub['s3_grab_bg']; ?>; top:0px;" class="btnVFRond"><h4><?php echo $katapub['s3_grab_text']; ?><h4></div></a>
 
 				</div>
 				
@@ -164,10 +218,34 @@ get_header();
 
 	<div class="section " id="section0" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
-			<div class="container sec-footer rak-gray" style="height:100vh;">
+			<div class="container sec-footer " style="height:100vh;">
 					
+							<div class="line-effects" style="height:100vh; position: relative; top:0vh;left: -44vh;">	  
+								<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+							                 
+					                <style>
+					                	.elastic canvas {
+					                		height: 100vh !important;
+					                	}
+					                	.p-col {
+					                		height: 100vh !important;
+					                	}
+					                </style>
+					                <main class="p-grid scroller" style=""> 
+
+										<a style="transform: translate(0px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+					                    <a style="transform: translate(475px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+									</main>
+
+							</div>
 					
-					<div class="banner-content ">
+					<div class="banner-content " style="transform: translate(30px , -833px);">
 						<h1 style="margin-top:5vh;font-weight:700;font-size:5em; width:64%; line-height:72px;color:#202020;">Par ici pour notre infolettre</h1>
 
 						

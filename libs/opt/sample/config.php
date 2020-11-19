@@ -284,10 +284,15 @@
                 'default'          => 'none'   
             ],
             [
-                'title'         => 'Sectioin 1 Background Video URL',
+                'title'         => 'Sectioin 1 Video',
                 'id'            => 'section_bg_video',
                 'type'          => 'text',
                 'default'       =>  get_template_directory_uri() . '/videos/eff01.mp4'
+            ],
+            [
+                'title'         => 'Sectioin 1 Mobile Video',
+                'id'            => 'hs1-mvideo',
+                'type'          => 'text',
             ],
             [
                 'title'         => 'Sectioin 1 Background ( Image / Color )',
@@ -309,10 +314,15 @@
 
 
             [
-                'title'         => 'Sectioin 2 Background Video URL',
+                'title'         => 'Sectioin 2 Video',
                 'id'            => 'section2_bg_video',
                 'type'          => 'text',
                 'default'       =>  get_template_directory_uri() . '/videos/eff02.mp4'
+            ],
+            [
+                'title'         => 'Sectioin 2 Mobile Video',
+                'id'            => 'hs2-mvideo',
+                'type'          => 'text',
             ],
             [
                 'title'         => 'Sectioin 2 Background ( Image / Color )',
@@ -341,8 +351,13 @@
 
 
             [
-                'title'         => 'Sectioin 3 Background Video URL',
+                'title'         => 'Sectioin 3 Video',
                 'id'            => 'section3_bg_video',
+                'type'          => 'text',
+            ],
+            [
+                'title'         => 'Sectioin 3 Mobile Video',
+                'id'            => 'hs3-mvideo',
                 'type'          => 'text',
             ],
             [
@@ -385,6 +400,11 @@
                 'type'          => 'text',
                 'default'       => get_template_directory_uri() . '/videos/eff04.mp4'
                 
+            ],
+            [
+                'title'         => 'Sectioin 4 Mobile Video',
+                'id'            => 'hs4-mvideo',
+                'type'          => 'text',
             ],
             [
                 'title'         => 'Sectioin 4 Background ( Image / Color )',
@@ -572,7 +592,57 @@
         'title'             => 'Services Page',
         'icon'              => 'el el-heart-empty',
         'fields'            => [
+            [
+                'title'         => 'Section 1 Heading',
+                'id'            => 'ss1-heading',
+                'type'          => 'editor',
+                'default'       =>  '
+Regardez
+ce que
+nous voyons
+'
+            ],
+            [
+                'title'         => 'Section 1 Heading Style',
+                'id'            => 'ss1-heading-style',
+                'type'          => 'typography',
+                'unit'          => 'em',
+                'default'       =>  [
+                        'color'         => '#FFF',
+                        'font-size'     => '9',
+                        'font-family'   => 'Hind Siliguri',
+                        'font-weight'   => '700'
+                ],
+            ],
 
+            [
+                'title'         => 'Section 1 grabing',
+                'id'            => 'ss1-grabing',
+                'type'          => 'text',
+                'default'       =>  'Nos projets'
+            ],
+            [
+                'title'         => 'Section 1 Heading',
+                'id'            => 'ss1-bg',
+                'type'          => 'background',
+                'default'       =>  [
+                    'background-color'  => '#202020'
+                ]
+            ],
+
+            [
+                'title'         => 'Section 1 Video',
+                'id'            => 'ss1-video',
+                'type'          => 'text',
+                
+            ],
+
+            [
+                'title'         => 'Section 1 Mobile Video',
+                'id'            => 'ss1-mvideo',
+                'type'          => 'text',
+                
+            ],
             
 
         ]
@@ -613,6 +683,68 @@
                 'default'       =>  [
                     'background-image'  => get_template_directory_uri() . '/img/job.gif',
                 ]
+            ],
+
+
+            [
+                'title'         => 'Section 2 Heading',
+                'id'            => 'js2-heading',
+                'type'          => 'editor',
+                'default'       =>  'Je veux postuler maintenant'
+            ],
+            [
+                'title'         => 'Section 2 Heading Style',
+                'id'            => 'js2-heading-style',
+                'type'          => 'typography',
+                'unit'          => 'em',
+                'default'       =>  [
+                        'color'         => '#202020',
+                        'font-size'     => '9',
+                        'font-family'   => 'Hind Siliguri',
+                        'font-weight'   => '700'
+                ],
+            ],
+
+            [
+                'title'         => 'Section 3 Heading',
+                'id'            => 'js3-heading',
+                'type'          => 'editor',
+                'default'       =>  'Je postule
+pour un poste
+de ...'
+            ],
+            [
+                'title'         => 'Section 3 Heading Style',
+                'id'            => 'js3-heading-style',
+                'type'          => 'typography',
+                'unit'          => 'em',
+                'default'       =>  [
+                        'color'         => '#202020',
+                        'font-size'     => '9',
+                        'font-family'   => 'Hind Siliguri',
+                        'font-weight'   => '700'
+                ],
+            ],
+
+             [
+                'title'         => 'Section 4 Heading',
+                'id'            => 'js4-heading',
+                'type'          => 'editor',
+                'default'       =>  'Ce
+poste est
+pour moi.'
+            ],
+            [
+                'title'         => 'Section 4 Heading Style',
+                'id'            => 'js4-heading-style',
+                'type'          => 'typography',
+                'unit'          => 'em',
+                'default'       =>  [
+                        'color'         => '#202020',
+                        'font-size'     => '9',
+                        'font-family'   => 'Hind Siliguri',
+                        'font-weight'   => '700'
+                ],
             ],
 
 

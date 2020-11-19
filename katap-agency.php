@@ -79,13 +79,52 @@ get_header();
 	<div id="particles-js" class="section" style="background-color: #EAECED;">
 
 
+		
 
+		    
 
 		<div id="" class="layer">
-			<div class="container rak-gray" style="height:100vh;">
+			<div class="container " style="height:100vh;">
+
+						<style>
+							.elastic canvas {
+								height: 60vh !important;
+							}
+							.p-col {
+								height: 60vh !important;
+							}
+
+							
+
+						</style>
+
+						<div class="line-effects" style="height:100vh; position: absolute; top:30px;left: 0px;right:0px; margin:auto;">	  
+							<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+						                 
+
+				                <main class="p-grid scroller art-book" style=""> 
+
+									<a id="art-book-a" style="transform: translate(510px, -17px); height: 100vh; width: 0px; z-index:999999999999999;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+				                         <div class="elastic elasticbox"></div>
+				                    </a> 
+				                    <a id="art-book-a" style="transform:translate(815px, -17px); width: 0px; height: 100vh; z-index:9999999999;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+				                         <div class="elastic elasticbox"></div>
+				                    </a> 
+
+				                    <a id="art-book-a" style="transform:translate(1105px, -17px); width: 0px; height: 100vh; z-index:9999999999;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+				                         <div class="elastic elasticbox"></div>
+				                    </a> 
+
+				                    <a id="art-book-a" style="transform:translate(1409px, -17px); width: 0px; height: 100vh; z-index:9999999999;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+				                         <div class="elastic elasticbox"></div>
+				                    </a> 
+
+								</main>
+
+						</div>
 
 
-				<div class="team">
+				<div class="team" style="transform: translate(0px, 18vh); z-index:0000;">
 					<div class="team-member">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/team/01.png" alt="">
 						<h3>Emilie <br> Fillion</h3>
@@ -121,8 +160,39 @@ get_header();
 
 
 		<div id="" class="layer">
-			<div class="container rak-gray" style="height:100vh;">
+			<div class="container" style="height:100vh;">
 
+						<div class="line-effects" style="height:100vh; position: absolute; top:30 px;left: 0px;right:0px; margin:auto;">	  
+							<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+						                 
+				                <style>
+				                	.elastic canvas {
+				                		height: 60vh !important;
+				                	}
+				                	.p-col {
+				                		height: 60vh !important;
+				                	}
+				                </style>
+				                <main class="p-grid scroller" style=""> 
+
+									<a id="art-book-a" style="transform: translate(510px, -17px); height: 100vh; width: 0px; z-index:999999999999999;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+				                         <div class="elastic elasticbox"></div>
+				                    </a> 
+				                    <a id="art-book-a" style="transform:translate(815px, -17px); width: 0px; height: 100vh; z-index:9999999999;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+				                         <div class="elastic elasticbox"></div>
+				                    </a> 
+
+				                    <a id="art-book-a" style="transform:translate(1105px, -17px); width: 0px; height: 100vh; z-index:9999999999;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+				                         <div class="elastic elasticbox"></div>
+				                    </a> 
+
+				                    <a id="art-book-a" style="transform:translate(1409px, -17px); width: 0px; height: 100vh; z-index:9999999999;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+				                         <div class="elastic elasticbox"></div>
+				                    </a> 
+
+								</main>
+
+						</div>
 
 				<div class="team">
 					<div class="team-member">
@@ -164,10 +234,35 @@ get_header();
 
 	<div class="section" id="" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
-			<div class="container sec-footer rak-gray" style="height:100vh;">
+			<div class="container sec-footer " style="height:100vh;">
 					
+
+							<div class="line-effects" style="height:100vh; position: relative; top:18px; left: -44vh;">	  
+								<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+							                 
+					                <style>
+					                	.elastic canvas {
+					                		height: 100vh !important;
+					                	}
+					                	.p-col {
+					                		height: 100vh !important;
+					                	}
+					                </style>
+					                <main class="p-grid scroller" style=""> 
+
+										<a style="transform: translate(0px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+					                    <a style="transform: translate(475px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+									</main>
+
+							</div>
 					
-					<div class="banner-content ">
+					<div class="banner-content " style="transform: translate(30px , -833px);">
 						<h1 style="margin-top:5vh;font-weight:700;font-size:5em; width:64%; line-height:72px;color:#202020;">Par ici pour notre infolettre</h1>
 
 						

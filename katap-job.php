@@ -81,7 +81,7 @@ global $katapub;
 					<div class="banner-content">
 						
 						<h2 class="jobsec02" style="margin-top:0vh; font-weight:700; font-size:6.5em; color:#202020; line-height:72px; transform: translate(100px, -49px);">
-							Je veux postuler maintenant
+							<?php echo $katapub['js2-heading']; ?>
 						 </h2>
 						
 						<div class="arr-down">
@@ -116,7 +116,7 @@ global $katapub;
 				
 				<div style="margin-top: 20vh;" class="content-box">
 					<h2 class="" style="margin-top:5vh; font-weight:700; font-size:6.5em; color:#FFFFFF; line-height:72px; transform: translate(100px, -49px);">
-						Je postule <br> pour un poste <br> de ...
+						<?php echo nl2br($katapub['js3-heading']); ?>
 					 </h2>
 
 					 <div class="featured-list">
@@ -181,19 +181,17 @@ global $katapub;
 
 					 	<div class="circle-box">
 					 		<div class="items">
-					 			<span>Tem pleins </span>
+					 			<span>Temps pleins </span>
 					 		</div>
 					 		<div class="items">
-					 			<span>Tem pleins </span>
+					 			<span>Pigiste </span>
 					 		</div>
 					 		<div class="items">
-					 			<span>Tem pleins </span>
+					 			<span>Peu Importe </span>
 					 		</div>
 					 	</div>
 
-					 	<h3 class="guranteee-text"> Ce <br>
-					 		poste est <br>
-					 		pour moi.</h3>
+					 	<h3 class="guranteee-text">  <?php echo nl2br($katapub['js4-heading']); ?> </h3>
 
 					 		    	<a href="#">
 					 				    <div style="transform:scale(1.33) translate(446px, -60px);" class="buttonNew">       
@@ -247,10 +245,34 @@ global $katapub;
 	<!-- FOOTER  -->
 	<div class="section " id="section0" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
-			<div class="container sec-footer rak-gray" style="height:100vh;">
+			<div class="container sec-footer" style="height:100vh;">
 					
+							<div class="line-effects" style="height:100vh; position: relative; top: 0vh;left: -44vh;">	  
+								<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+							                 
+					                <style>
+					                	.elastic canvas {
+					                		height: 100vh !important;
+					                	}
+					                	.p-col {
+					                		height: 100vh !important;
+					                	}
+					                </style>
+					                <main class="p-grid scroller" style=""> 
+
+										<a style="transform: translate(0px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+					                    <a style="transform: translate(475px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+									</main>
+
+							</div>
 					
-					<div class="banner-content ">
+					<div class="banner-content " style="transform: translate(30px , -833px);">
 						<h1 style="margin-top:5vh;font-weight:700;font-size:5em; width:64%; line-height:72px;color:#202020;">Par ici pour notre infolettre</h1>
 
 						

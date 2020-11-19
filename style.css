@@ -1,11 +1,11 @@
 /*
-	Theme Name: Katapub 
-	Theme URI: https://www.alicemedia.ca/
-	Author: Alce Media 
-	Author URI: https://www.alicemedia.ca/
-	Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda modi fugiat laboriosam aspernatur sed reprehenderit eaque maiores repellendus, molestias deserunt. 
-	Tags: Salauddin, vai
-	version: 1.1.1
+    Theme Name: Katapub 
+    Theme URI: https://www.alicemedia.ca/
+    Author: Alce Media 
+    Author URI: https://www.alicemedia.ca/
+    Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda modi fugiat laboriosam aspernatur sed reprehenderit eaque maiores repellendus, molestias deserunt. 
+    Tags: Salauddin, vai
+    version: 1.1.1
 */
 
 
@@ -299,17 +299,17 @@ html.fp-enabled,
     padding-top: 10px;
     padding-bottom: 8px;
 }
-.header .main-menu ul {
+.header .main-menu-katapub ul {
     margin-top: 37px;
     margin-left: 70px;
     margin-bottom: 0px;
 }
 
-.header .main-menu ul li{
+.header .main-menu-katapub ul li{
     display: inline-block;
 }
 
-.header .main-menu ul li a {
+.header .main-menu-katapub ul li a {
     font-size: 20px;
     font-weight: 400;
     color: #000;
@@ -317,11 +317,11 @@ html.fp-enabled,
     position: relative;
 }
 
-.header .main-menu ul li a:hover {
+.header .main-menu-katapub ul li a:hover {
     text-decoration: none;
 }
 
-.header .main-menu ul li a:before {
+.header .main-menu-katapub ul li a:before {
     content: '';
     display: block;
 
@@ -333,28 +333,28 @@ html.fp-enabled,
     transition: all 0.3s ease;
 }
 
-.header .main-menu ul li:nth-child(1) a:before {
+.header .main-menu-katapub ul li:nth-child(1) a:before {
     background-color: #e43889 !important;
 }
-.header .main-menu ul li:nth-child(2) a:before {
+.header .main-menu-katapub ul li:nth-child(2) a:before {
     background-color: #fbdd1a !important;
 }
 
-.header .main-menu ul li:nth-child(3) a:before {
+.header .main-menu-katapub ul li:nth-child(3) a:before {
     background-color: #40abdd !important;
 }
 
-.header .main-menu ul li:nth-child(4) a:before {
+.header .main-menu-katapub ul li:nth-child(4) a:before {
     background-color: #e43889 !important;
 }
 
-.header .main-menu ul li:nth-child(5) a:before {
+.header .main-menu-katapub ul li:nth-child(5) a:before {
     background-color: #fbdd1a !important;
 }
 
 
 
-.header .main-menu ul li a:hover:before {
+.header .main-menu-katapub ul li a:hover:before {
     width: 100%;
 }
 
@@ -996,7 +996,7 @@ html.fp-enabled,
 }
 
 .team {
-    transform: translate(0px, 300px);
+    transform: translate(0px, 200px);
 }
 
 .team .team-member {
@@ -1004,9 +1004,15 @@ html.fp-enabled,
     float: left;
     text-align: center;
     position: relative;
+    transition: .5s;
+    cursor: pointer;
 
 }
-.team .team-member:after {
+
+.team .team-member:hover {
+    transform: translate(0px , -100px);
+}
+/*.team .team-member:after {
     content:'';
     display: block;
 
@@ -1027,7 +1033,7 @@ html.fp-enabled,
     position: absolute;
     top: 0px;
     right: 0px;
-}
+}*/
 .team .team-member img {
     margin-bottom: 0px;
     width: 90%;
@@ -1056,7 +1062,7 @@ html.fp-enabled,
     background-image: url('img/btn/btn1.png');
     width: 150px;
     height: 150px;
-    margin:100px  auto 0px; 
+    margin:30px  auto 0px; 
     background-size: 100% 100%;
     cursor: pointer;
 
@@ -1501,6 +1507,38 @@ html.fp-enabled,
 
 
 
+/* games */
+#breakout_board {
+  background:   #bebebe;
+  display: block;
+  margin: auto;
+}
+
+#paddle {
+  /*x:40px;
+  y:300px;*/
+  /*width: 100px;
+  height: 16px;*/
+  fill:rgb(0, 79, 255);
+  stroke-width:1;
+  stroke:rgb(0,0,0);
+}
+
+#lives, #score {
+  font-size: 24px;
+ fill:rgb(0, 79, 255);
+}
+
+
+
+#ball {
+  cx: 100px;
+  cy: 160px;
+  r: 10px;
+  fill:rgb(0, 79, 255);
+  stroke-width:1;
+  stroke:rgb(0,0,0);
+}
 
 
 
@@ -1608,4 +1646,3 @@ html.fp-enabled,
 
 
 }
-

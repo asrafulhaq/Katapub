@@ -21,6 +21,7 @@ global $katapub;
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/thimify/themify-icons.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/katapa/katapub-Rainbow.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/custom.css" />
+	<link href="<?php echo get_template_directory_uri(); ?>/assets/css/chiara-luzzana.webflow.ac7de91c7.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" />
 	<style>
@@ -129,7 +130,7 @@ global $katapub;
 				<div class="menu-res">
 					<a href="#">MENU <i class="fa fa-bars"></i></a>
 				</div>
-				<div class="main-menu">
+				<div class="main-menu-katapub">
 					<?php  
 
 						wp_nav_menu([

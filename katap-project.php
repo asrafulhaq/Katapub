@@ -348,10 +348,33 @@ get_header();
 
 	<div class="section " id="section0" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
-			<div class="container sec-footer rak-gray" style="height:100vh;">
+			<div class="container sec-footer" style="height:100vh;">
+							<div class="line-effects" style="height:100vh; position: relative; top:-3vh;left: -44vh;">	  
+								<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+							                 
+					                <style>
+					                	.elastic canvas {
+					                		height: 100vh !important;
+					                	}
+					                	.p-col {
+					                		height: 100vh !important;
+					                	}
+					                </style>
+					                <main class="p-grid scroller" style=""> 
+
+										<a style="transform: translate(0px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+					                    <a style="transform: translate(475px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+									</main>
+
+							</div>
 					
-					
-					<div class="banner-content ">
+					<div class="banner-content " style="transform: translate(30px , -833px);">
 						<h1 style="margin-top:5vh;font-weight:700;font-size:5em; width:64%; line-height:72px;color:#202020;">Par ici pour notre infolettre</h1>
 
 						

@@ -18,11 +18,11 @@ global $katapub;
 
 
 	<!-- SECTION 01 -->
-	<div class="section " id="section0" style="background-color: #202020; ">
+	<div class="section " id="section0" style="background-color: <?php echo $katapub['ss1-bg']['background-color']; ?>; background-image: url(<?php echo $katapub['ss1-bg']['background-image']; ?>); background-size: cover; background-position: center; ">
 
-		<?php if(!empty($katapub['csection1_bg_video'])) : ?>
+		<?php if(!empty($katapub['ss1-video'])) : ?>
 		<video id="myVideo" loop muted data-autoplay>
-			<source src="<?php echo $katapub['csection1_bg_video']; ?>" >
+			<source src="<?php echo $katapub['ss1-video']; ?>" >
 		</video>
 		<?php endif; ?>
 		<div class="layer">
@@ -33,9 +33,7 @@ global $katapub;
 					<div class="banner-content">
 						<h1 class="" style="margin-top:25vh;font-weight:700; font-size:6.5em;color:#FFF; line-height:70px;">
 
-							Regardez <br>
-							ce que <br>
-							nous voyons
+							 <?php echo nl2br($katapub['ss1-heading']); ?>
 
 						 </h1>
 						
@@ -50,7 +48,7 @@ global $katapub;
 							}
 
 						</style>
-						<a href="#" class="LinkBtnRond"><div style="background-color:<?php echo $katapub['s3_grab_bg']; ?>; top:362px; right:586px;" class="btnVFRond"><h4><?php echo $katapub['s3_grab_text']; ?><h4></div></a>
+						<a href="#" class="LinkBtnRond"><div style="background-color:<?php echo $katapub['s3_grab_bg']; ?>; top:362px; right:586px;" class="btnVFRond"><h4><?php echo nl2br($katapub['ss1-grabing']); ?><h4></div></a>
 
 					</div>
 
@@ -252,10 +250,34 @@ global $katapub;
 	<!-- FOOTR  -->
 	<div class="section " id="section0" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
-			<div class="container sec-footer rak-gray" style="height:100vh;">
+			<div class="container sec-footer" style="height:100vh;">
 					
-					
-					<div class="banner-content ">
+							<div class="line-effects" style="height:100vh; position: relative; top:0vh;left: -44vh;">	  
+								<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
+							                 
+					                <style>
+					                	.elastic canvas {
+					                		height: 100vh !important;
+					                	}
+					                	.p-col {
+					                		height: 100vh !important;
+					                	}
+					                </style>
+					                <main class="p-grid scroller" style=""> 
+
+										<a style="transform: translate(0px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+					                    <a style="transform: translate(475px, 0px); height: 100vh;" rel="noopener" href="" class="p-col pagelink w-inline-block">		                             
+					                         <div class="elastic elasticbox"></div>
+					                    </a> 
+
+									</main>
+
+							</div>
+
+					<div class="banner-content " style="transform: translate(30px , -833px);">
 						<h1 style="margin-top:5vh;font-weight:700;font-size:5em; width:64%; color:#202020;">Par ici pour notre infolettre</h1>
 
 						
