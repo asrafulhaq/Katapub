@@ -15,17 +15,17 @@ get_header();
 <div id="fullpage">
 
 
-	
-	<div class="section " id="section0" style="background-color: #202020;">
+	<!-- SECTION 01 -->
+	<div class="section " id="section0" style="background-color: <?php echo $katapub['ps1-bg']['background-color']; ?>;">
 		<div class="layer">
 			<div class="container rak" style="height:100vh;">
 					
 					<div class="round"></div>
 					
 					<div class="banner-content">
-						<h1 class="wow <?php echo $katapub['s1-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['s1-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['s1-heading-style']['font-size']; ?>;color:<?php echo $katapub['s1-heading-style']['color']; ?>;">
+						<h1 class="wow <?php echo $katapub['ps1-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['ps1-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['ps1-heading-style']['font-size']; ?>;color:<?php echo $katapub['ps1-heading-style']['color']; ?>;">
 
-							Voici <br>nos projets <br> primés 
+							 <?php echo nl2br($katapub['ps1-heading']); ?>
 
 						 </h1>
 
@@ -38,23 +38,28 @@ get_header();
 	</div>
 
 
+	<!-- SECTION 02 -->
+	<div class="section" style="" id="section0">
 
-	<div class="section" style="background-color: <?php echo $katapub['section2_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section2_bg']['background-image']; ?>); background-position: center; background-size: cover;" id="section0">
-		<?php if( !empty($katapub['section2_bg_video'] ) ) : ?>
+
+		<?php if( !empty($katapub['ps2-video'] ) ) : ?>
 		<video id="myVideo" loop muted data-autoplay>
-			<source src="<?php echo get_template_directory_uri(); ?>/videos/mohila.mp4" type="video/mp4">
+			<source src="<?php echo $katapub['ps2-video']; ?>" type="video/mp4">
 		</video>
 		<?php endif; ?>
+
+
+
 		<div class="layer">
 			<div class="container " style="height:100vh;">
-				
+				<img style="display:block; margin:auto; transform: translate(0px, 200px);" src="<?php echo $katapub['ps2-brand']['url']; ?>" alt="">
 				<section class="section-content">
 					    <div class="btn-center btn-bottom-center" style="margin-top: 40%;">
-					    	<a href="#">
+					    	<a href="<?php echo $katapub['ps2-btn-link']; ?>">
 							    <div style="margin-top:450px;" class="buttonNew">       
 							        <div class="button-title">
-							            <span><?php echo $katapub['section2_btn-text']; ?></span>
-							            <span><?php echo $katapub['section2_btn-hover-text']; ?></span>
+							            <span><?php echo $katapub['ps2-btn']; ?></span>
+							            <span><?php echo $katapub['ps2-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -69,27 +74,27 @@ get_header();
 
 
 
-
+	<!-- SECTION 03 -->
 	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section4_bg']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
 
-		<?php if(!empty($katapub['s4_video_bg'])) : ?>
+		<?php if(!empty($katapub['ps3-video'])) : ?>
 		<video id="myVideo" loop muted data-autoplay>
-			<source src="<?php echo $katapub['s4_video_bg']; ?>" type="video/mp4">
+			<source src="<?php echo $katapub['ps3-video']; ?>" type="video/mp4">
 		</video>
 		<?php endif; ?>
 
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
-					<img style="display: block;margin:100px auto 0px;" src="<?php echo $katapub['s4_brand']['url']; ?>" alt="">
+					<img style="display: block;margin:400px auto 0px; width: 615px;" src="<?php echo $katapub['ps3-brand']['url']; ?>" alt="">
 				<section class="section-content">
-					    <div style="margin: 150px auto 0px" class="btn-center">
+					    <div style="margin: 50px auto 0px" class="btn-center">
 
-					    	<a href="<?php echo $katapub['s4_btn_link']; ?>">
+					    	<a href="<?php echo $katapub['ps3-btn-link']; ?>">
 							    <div style="" class="buttonNew">       
 							        <div class="button-title">
-							            <span><?php echo $katapub['s4_btn_text']; ?></span>
-							            <span><?php echo $katapub['s4_btn_text_hov']; ?></span>
+							            <span><?php echo $katapub['ps3-btn']; ?></span>
+							            <span><?php echo $katapub['ps3-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -104,27 +109,63 @@ get_header();
 
 
 
-
-	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section4_bg']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
+	<!-- SECTION 04 -->
+	<div class="section" style="" id="section0">
 
 
 		<video id="myVideo" loop muted data-autoplay>
-			<source src="<?php echo get_template_directory_uri(); ?>/videos/mohila2.mp4" type="video/mp4">
+			<source src="<?php echo $katapub['ps4-video']; ?>" type="video/mp4">
 		</video>
 
 
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
-					<img style="display: block;margin:100px auto 0px;" src="<?php echo get_template_directory_uri(); ?>/img/logoVF.png" alt="">
+					<img style="display: block;margin:400px auto 0px; width:450px;" src="<?php echo $katapub['ps4-brand']['url']; ?>" alt="">
 				<section class="section-content">
-					    <div style="margin: 150px auto 0px" class="btn-center">
+					    <div style="margin: 30px auto 0px" class="btn-center">
 
-					    	<a href="<?php echo $katapub['s4_btn_link']; ?>">
+					    	<a href="<?php echo $katapub['ps4-btn-link']; ?>">
 							    <div style="" class="buttonNew">       
 							        <div class="button-title">
-							            <span><?php echo $katapub['s4_btn_text']; ?></span>
-							            <span><?php echo $katapub['s4_btn_text_hov']; ?></span>
+							            <span><?php echo $katapub['ps4-btn']; ?></span>
+							            <span><?php echo $katapub['ps4-btn-hover']; ?></span>
+							        </div>
+							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
+							    </div>
+							</a>
+					    </div>
+				</section>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<!-- SECTION 05	 -->
+	<div class="section" style="background-image: url(<?php echo $katapub['ps5-bg']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
+
+
+
+
+		<div class="layer">
+			<div class="container " style="height:100vh;">
+				
+					
+				<section class="section-content">
+
+						<div style="margin-top:400px; margin-left:30px;" class="section-title">
+							<h2 style="font-size:5em; font-family: Hind Siliguri;color:#202020; font-weight:100; letter-spacing:13px;"><?php echo $katapub['ps5-title']; ?></h2>
+							<h3 style="font-size:3em; font-family: Hind Siliguri;color:#202020; font-weight:100;"><?php echo $katapub['ps5-subtitle']; ?></h3>
+						</div>
+
+					    <div style="margin: 150px auto 0px" class="btn-center">
+
+					    	<a href="<?php echo $katapub['ps5-btn-link']; ?>">
+							    <div style="" class="buttonNew">       
+							        <div class="button-title">
+							            <span><?php echo $katapub['ps5-btn']; ?></span>
+							            <span><?php echo $katapub['ps5-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -138,26 +179,30 @@ get_header();
 
 
 
-	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section4_bg']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
+	<!-- SECTION 06 -->
+	<div class="section" style="" id="section0">
 
 
 		<video id="myVideo" loop muted data-autoplay>
-			<source src="<?php echo get_template_directory_uri(); ?>/videos/paint.mp4" type="video/mp4">
+			<source src="<?php echo $katapub['ps6-video']; ?>" type="video/mp4">
 		</video>
 
 
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
-					<img style="display: block;margin:100px auto 0px;" src="<?php echo get_template_directory_uri(); ?>/img/logoVF.png" alt="">
+					<div class="section-title" style="margin-top: 400px;">
+						<h2 style="text-align: center;color: #FFF;letter-spacing: 13px; font-size:4em;font-family: Hind Siliguri; font-weight: 100;"><?php echo $katapub['ps6-title']; ?></h2>
+					</div>
+
 				<section class="section-content">
 					    <div style="margin: 150px auto 0px" class="btn-center">
 
-					    	<a href="<?php echo $katapub['s4_btn_link']; ?>">
+					    	<a href="<?php echo $katapub['ps6-btn-link']; ?>">
 							    <div style="" class="buttonNew">       
 							        <div class="button-title">
-							            <span><?php echo $katapub['s4_btn_text']; ?></span>
-							            <span><?php echo $katapub['s4_btn_text_hov']; ?></span>
+							            <span><?php echo $katapub['ps6-btn']; ?></span>
+							            <span><?php echo $katapub['ps6-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -173,7 +218,11 @@ get_header();
 
 
 
-	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo get_template_directory_uri(); ?>/img/alainImg.jpg); background-size: cover; background-position: center;" id="section0">
+
+
+
+	<!-- Section 07 -->
+	<div class="section" style="background-color: <?php echo $katapub['ps7-background']['background-color']; ?>; background-image: url(<?php echo $katapub['ps7-background']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
 
 
 
@@ -181,15 +230,15 @@ get_header();
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
-					<img style="display: block;margin:100px auto 0px;" src="<?php echo get_template_directory_uri(); ?>/img/logoVF.png" alt="">
+					
 				<section class="section-content">
-					    <div style="margin: 150px auto 0px" class="btn-center">
+					    <div style="margin: 750px auto 0px" class="btn-center">
 
-					    	<a href="<?php echo $katapub['s4_btn_link']; ?>">
+					    	<a href="<?php echo $katapub['ps7-btn-link']; ?>">
 							    <div style="" class="buttonNew">       
 							        <div class="button-title">
-							            <span><?php echo $katapub['s4_btn_text']; ?></span>
-							            <span><?php echo $katapub['s4_btn_text_hov']; ?></span>
+							            <span><?php echo $katapub['ps7-btn']; ?></span>
+							            <span><?php echo $katapub['ps7-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -202,9 +251,8 @@ get_header();
 	</div>
 
 
-
-
-	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo get_template_directory_uri(); ?>/img/Plante.jpg); background-size: cover; background-position: center;" id="section0">
+	<!-- Section 08 -->
+	<div class="section" style="background-color: <?php echo $katapub['ps8-background']['background-color']; ?>; background-image: url(<?php echo $katapub['ps8-background']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
 
 
 
@@ -212,15 +260,15 @@ get_header();
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
-					<img style="display: block;margin:100px auto 0px;" src="<?php echo get_template_directory_uri(); ?>/img/logoVF.png" alt="">
-				<section class="section-content">
-					    <div style="margin: 150px auto 0px" class="btn-center">
 
-					    	<a href="<?php echo $katapub['s4_btn_link']; ?>">
+				<section class="section-content">
+					    <div style="margin: 750px auto 0px" class="btn-center">
+
+					    	<a href="<?php echo $katapub['ps8-btn-link']; ?>">
 							    <div style="" class="buttonNew">       
 							        <div class="button-title">
-							            <span><?php echo $katapub['s4_btn_text']; ?></span>
-							            <span><?php echo $katapub['s4_btn_text_hov']; ?></span>
+							            <span><?php echo $katapub['ps8-btn']; ?></span>
+							            <span><?php echo $katapub['ps8-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -234,56 +282,27 @@ get_header();
 
 
 
-	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo get_template_directory_uri(); ?>/img/festivale.png); background-size: cover; background-position: center;" id="section0">
-
-
-
-
-		<div class="layer">
-			<div class="container " style="height:100vh;">
-				
-					<img style="display: block;margin:100px auto 0px;" src="<?php echo get_template_directory_uri(); ?>/img/logoVF.png" alt="">
-				<section class="section-content">
-					    <div style="margin: 150px auto 0px" class="btn-center">
-
-					    	<a href="<?php echo $katapub['s4_btn_link']; ?>">
-							    <div style="" class="buttonNew">       
-							        <div class="button-title">
-							            <span><?php echo $katapub['s4_btn_text']; ?></span>
-							            <span><?php echo $katapub['s4_btn_text_hov']; ?></span>
-							        </div>
-							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
-							    </div>
-							</a>
-					    </div>
-				</section>
-				
-			</div>
-		</div>
-	</div>
-
-
-
+	<!-- Section 09  -->
 	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section4_bg']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
 
 
 		<video id="myVideo" loop muted data-autoplay>
-			<source src="<?php echo get_template_directory_uri(); ?>/videos/ama.mp4" type="video/mp4">
+			<source src="<?php echo $katapub['ps9-video']; ?>" type="video/mp4">
 		</video>
 
 
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
-					<img style="display: block;margin:100px auto 0px;" src="<?php echo get_template_directory_uri(); ?>/img/logoVF.png" alt="">
+					
 				<section class="section-content">
-					    <div style="margin: 150px auto 0px" class="btn-center">
+					    <div style="margin: 750px auto 0px" class="btn-center">
 
-					    	<a href="<?php echo $katapub['s4_btn_link']; ?>">
+					    	<a href="<?php echo $katapub['ps9-btn-link']; ?>">
 							    <div style="" class="buttonNew">       
 							        <div class="button-title">
-							            <span><?php echo $katapub['s4_btn_text']; ?></span>
-							            <span><?php echo $katapub['s4_btn_text_hov']; ?></span>
+							            <span><?php echo $katapub['ps9-btn']; ?></span>
+							            <span><?php echo $katapub['ps9-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -298,8 +317,8 @@ get_header();
 
 
 
-
-	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo get_template_directory_uri(); ?>/img/headerExpo.jpg); background-size: cover; background-position: center;" id="section0">
+	<!-- Section 10 -->
+	<div class="section" style="background-color: <?php echo $katapub['ps10-background']['background-color']; ?>; background-image: url(<?php echo $katapub['ps10-background']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
 
 
 
@@ -307,15 +326,15 @@ get_header();
 		<div class="layer">
 			<div class="container " style="height:100vh;">
 				
-					<img style="display: block;margin:100px auto 0px;" src="<?php echo get_template_directory_uri(); ?>/img/logoVF.png" alt="">
+					
 				<section class="section-content">
-					    <div style="margin: 150px auto 0px" class="btn-center">
+					    <div style="margin: 750px auto 0px" class="btn-center">
 
-					    	<a href="<?php echo $katapub['s4_btn_link']; ?>">
+					    	<a href="<?php echo $katapub['ps1--btn-link']; ?>">
 							    <div style="" class="buttonNew">       
 							        <div class="button-title">
-							            <span><?php echo $katapub['s4_btn_text']; ?></span>
-							            <span><?php echo $katapub['s4_btn_text_hov']; ?></span>
+							            <span><?php echo $katapub['ps10-btn']; ?></span>
+							            <span><?php echo $katapub['ps10-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -349,7 +368,7 @@ get_header();
 	<div class="section " id="section0" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
 			<div class="container sec-footer" style="height:100vh;">
-							<div class="line-effects" style="height:100vh; position: relative; top:-3vh;left: -44vh;">	  
+							<div class="line-effects" style="height:100vh; position: relative; top:0vh;left: -44vh;">	  
 								<a style="display: none;" rel="noopener" aria-label="sound" href="#" class="sound soundtoggler w-inline-block"></a>
 							                 
 					                <style>

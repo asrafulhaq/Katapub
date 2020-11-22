@@ -964,7 +964,7 @@ html.fp-enabled,
     background-color: #fff3f2;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 8px;
     text-align: center;
     overflow: hidden;
     display: inline-block;
@@ -1365,8 +1365,8 @@ html.fp-enabled,
 
 .gurantee {
     position: absolute;
-    left: -430px;
-    top: -391%;
+    left: -417px;
+    top: -445%;
     width: 420px;
 }
 
@@ -1545,22 +1545,11 @@ html.fp-enabled,
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btnVFRond.kapa:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    background: #fff !important;
+    color: #202020 !important;
+}
 
 
 
@@ -1582,7 +1571,6 @@ html.fp-enabled,
 
 
 @keyframes shake {
-    
     0%, 100% {
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
@@ -1595,8 +1583,6 @@ html.fp-enabled,
         -webkit-transform: translate3d(10px, 0, 0);
         transform: translate3d(10px, 0, 0);
     }
-
-
     0%, 100% {
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
@@ -1609,7 +1595,6 @@ html.fp-enabled,
         -webkit-transform: translate3d(10px,0,0);
         transform: translate3d(10px,0,0);
     }
-
     0% {
         transform: translate(1px, 1px) rotate(0deg);
     }
@@ -1643,6 +1628,15 @@ html.fp-enabled,
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
-
-
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
 }

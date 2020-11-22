@@ -31,7 +31,7 @@ global $katapub;
 					<div class="round"></div>
 					
 					<div class="banner-content">
-						<h1 class="" style="margin-top:25vh;font-weight:700; font-size:6.5em;color:#FFF; line-height:70px;">
+						<h1 class="wow <?php echo $katapub['ss1-heading-effect']; ?>" style="margin-top:25vh;font-weight:700; font-size:6.5em;color:#FFF; line-height:70px;">
 
 							 <?php echo nl2br($katapub['ss1-heading']); ?>
 
@@ -48,7 +48,7 @@ global $katapub;
 							}
 
 						</style>
-						<a href="#" class="LinkBtnRond"><div style="background-color:<?php echo $katapub['s3_grab_bg']; ?>; top:362px; right:586px;" class="btnVFRond"><h4><?php echo nl2br($katapub['ss1-grabing']); ?><h4></div></a>
+						<a href="#" class="LinkBtnRond "><div style="background-color:<?php echo $katapub['s3_grab_bg']; ?>; top:362px; right:586px;" class="btnVFRond kapa"><h4><?php echo nl2br($katapub['ss1-grabing']); ?><h4></div></a>
 
 					</div>
 
@@ -69,8 +69,7 @@ global $katapub;
 					<div class="banner-content">
 						<h1 class="kcs2" style="margin-top:3vh; margin-left:50%;font-weight:700; font-size:7.5em;color:#202020; line-height:80px;">
 
-							Branding <br>
-							BX
+							<?php echo nl2br($katapub['ss2-heading']); ?>
 
 						 </h1>
 						
@@ -131,19 +130,10 @@ global $katapub;
 						</div>
 						<div class="content">
 							<h4>
-								Le <br>
-								concept <br>
-								utilisateur
+								<?php echo nl2br($katapub['lc1-heading']); ?>
 							</h4>
 							<p>
-								L’élaboration de l’idée.
-								Les créateurs se rassemblent
-								pour mettre au monde
-								l’approche qu’il faut pour
-								la bonne clientèle/rejoindre
-								le bon public. Celle qui surprendra,
-								accrochera et rendra
-								l’expérience mémorable.
+								<?php echo $katapub['lc1-content']; ?>
 							</p>
 						</div>
 					</div>
@@ -156,19 +146,10 @@ global $katapub;
 						</div>
 						<div class="content">
 							<h4>
-								Le <br>
-								concept <br>
-								utilisateur
+								<?php echo nl2br($katapub['lc2-heading']); ?>
 							</h4>
 							<p>
-								L’élaboration de l’idée.
-								Les créateurs se rassemblent
-								pour mettre au monde
-								l’approche qu’il faut pour
-								la bonne clientèle/rejoindre
-								le bon public. Celle qui surprendra,
-								accrochera et rendra
-								l’expérience mémorable.
+								<?php echo $katapub['lc2-content']; ?>
 							</p>
 						</div>
 					</div>
@@ -199,19 +180,10 @@ global $katapub;
 						</div>
 						<div class="content">
 							<h4>
-								Le <br>
-								concept <br>
-								utilisateur
+								<?php echo nl2br($katapub['lc3-heading']); ?>
 							</h4>
 							<p>
-								L’élaboration de l’idée.
-								Les créateurs se rassemblent
-								pour mettre au monde
-								l’approche qu’il faut pour
-								la bonne clientèle/rejoindre
-								le bon public. Celle qui surprendra,
-								accrochera et rendra
-								l’expérience mémorable.
+								<?php echo $katapub['lc3-content']; ?>
 							</p>
 						</div>
 					</div>
@@ -224,19 +196,10 @@ global $katapub;
 						</div>
 						<div class="content">
 							<h4>
-								Le <br>
-								concept <br>
-								utilisateur
+								<?php echo nl2br($katapub['lc4-heading']); ?>
 							</h4>
 							<p>
-								L’élaboration de l’idée.
-								Les créateurs se rassemblent
-								pour mettre au monde
-								l’approche qu’il faut pour
-								la bonne clientèle/rejoindre
-								le bon public. Celle qui surprendra,
-								accrochera et rendra
-								l’expérience mémorable.
+								<?php echo $katapub['lc4-content']; ?>
 							</p>
 						</div>
 					</div>

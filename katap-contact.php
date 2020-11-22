@@ -17,7 +17,7 @@ global $katapub;
 <div id="fullpage">
 
 
-	
+	<!-- Section 01  -->
 	<div class="section " id="section0" style="background-color: <?php echo $katapub['csection1_bg']['background-color']; ?>; background-image:url( '<?php echo $katapub['csection1_bg']['background-image']; ?>') ; background-size: 1000px auto; background-position: bottom right; background-repeat: no-repeat;">
 
 		<?php if(!empty($katapub['csection1_bg_video'])) : ?>
@@ -31,7 +31,10 @@ global $katapub;
 	
 					
 					<div class="banner-content">
-						<h1 class="wow <?php echo $katapub['cs1-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['cs1-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['cs1-heading-style']['font-size']; ?>;color:<?php echo $katapub['cs1-heading-style']['color']; ?>; line-height:<?php echo $katapub['cs1-heading-style']['line-height']; ?>;"><?php echo $katapub['cs1-heading']; ?>
+
+						<h1 class="wow <?php echo $katapub['cs1-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['cs1-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['cs1-heading-style']['font-size']; ?>;color:<?php echo $katapub['cs1-heading-style']['color']; ?>; line-height:<?php echo $katapub['cs1-heading-style']['line-height']; ?>;">
+
+							<?php echo nl2br($katapub['cs1-heading']); ?>
 
 						 </h1>
 						
@@ -45,7 +48,7 @@ global $katapub;
 
 
 
-
+	<!-- Section 02  -->
 	<div class="section " id="section2" style="background-color: <?php echo $katapub['csection2_bg']['background-color']; ?>; background-image:url( '<?php echo $katapub['csection2_bg']['background-image']; ?>') ; background-size: 1000px auto; background-position: bottom right; background-repeat: no-repeat;">
 
 		<?php if(!empty($katapub['csection2_bg_video'])) : ?>
@@ -56,7 +59,7 @@ global $katapub;
 
 
 		<div class="side-text">
-			<h2>POUR LES 6 <br> PROCHAINS MOIS</h2>
+			<h2><?php echo nl2br($katapub['cs2-side-text']); ?></h2>
 		</div>
 
 		<div class="layer">
@@ -137,7 +140,7 @@ global $katapub;
 	</div>
 
 
-	<!-- contact us section -->
+	<!-- Section 03 -->
 	<div class="section " id="section2" style="background-color: <?php echo $katapub['csection3_bg']['background-color']; ?>; background-image:url( '<?php echo $katapub['csection3_bg']['background-image']; ?>') ; background-size: 1000px auto; background-position: bottom right; background-repeat: no-repeat;">
 
 		<?php if(!empty($katapub['csection3_bg_video'])) : ?>
@@ -160,28 +163,47 @@ global $katapub;
 							<li><a href="#">Campagne</a></li>
 							<li><a href="#">Site web </a></li>
 						</ul>
-						<h4>Ma banque d'heures</h4>
+						<h4><?php echo nl2br($katapub['cs3-subheading']); ?></h4>
 						<div class="main-options-menu">
 							<div class="options-item">
-								<p>50 Herues</p>
+								<p><?php echo $katapub['cs3-c1-text']; ?> Herues</p>
 							</div>
 							<div class="options-item">
-								<p>50 Herues</p>
+								<p><?php echo $katapub['cs3-c2-text']; ?> Herues</p>
 							</div>
 							<div class="options-item">
-								<p>50 Herues</p>
+								<p><?php echo $katapub['cs3-c3-text']; ?> Herues</p>
 							</div>
 							<div class="options-item">
-								<p>50 Herues</p>
+								<p><?php echo $katapub['cs3-c4-text']; ?></p>
 							</div>
 						</div>
 					</div>
 
 					<div class="banner-content" style="width: 600px;">
 
-						<h2 class="<?php echo $katapub['cs2-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['cs3-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['cs3-heading-style']['font-size']; ?>;color:<?php echo $katapub['cs3-heading-style']['color']; ?>; line-height:<?php echo $katapub['cs3-heading-style']['line-height']; ?>;">
+						<h2 class="<?php echo $katapub['cs2-heading-animation']; ?>" style="margin-top:16vh; margin-left:4vw;font-weight:<?php echo $katapub['cs3-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['cs3-heading-style']['font-size']; ?>;color:<?php echo $katapub['cs3-heading-style']['color']; ?>; line-height:<?php echo $katapub['cs3-heading-style']['line-height']; ?>;">
 							<?php echo nl2br($katapub['cs3-heading']); ?>
 						 </h2>
+
+						 <!-- Gurantee Start  -->
+							<div class="gurantee" style="left:400px; top:232px;">
+								<form id="email_subs" action="">
+									<label for="inp" class="inp">
+										
+									  <input type="text" id="inp" placeholder="&nbsp;">
+									  <span class="label">Courriel</span>
+									  <svg width="120px"  height="26px" viewBox="0 0 120 26">
+									    <path style="color:red;" d="M0,25 C21,25 46,25 74,25 C102,25 118,25 120,25"></path>
+									  </svg>
+									  <span class="border"></span>
+									  <button id="sub_btn" type="submit"><i class="ti-arrow-right"></i></button>
+									  <img src="<?php echo get_template_directory_uri(); ?>/img/ghurantee.gif" alt="">
+									  <span id="success_msg"></span>
+									</label>
+								</form>
+							</div>
+							<!-- Gurantee End -->
 						
 					</div>
 
@@ -205,7 +227,7 @@ global $katapub;
 
 
 
-
+	<!-- Footer  -->
 	<div class="section " id="section0" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
 			<div class="container sec-footer" style="height:100vh;">
@@ -266,6 +288,8 @@ global $katapub;
 							</div>
 						</div>
 						<div class="footer-3">
+
+							<!-- Gurantee Start  -->
 							<div class="gurantee">
 								<form id="email_subs" action="">
 									<label for="inp" class="inp">
@@ -282,6 +306,7 @@ global $katapub;
 									</label>
 								</form>
 							</div>
+							<!-- Gurantee End -->
 							<div class="copy-right">
 								<a href="#">
 									<img src="<?php echo $katapub['logo-footer-upload']['url']; ?>" alt="">

@@ -15,7 +15,7 @@ get_header();
 <div id="fullpage">
 
 
-	<!-- ---------------- -->
+	<!-- Section 01  -->
 	<div class="section" style="background-color: <?php echo $katapub['asection_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['asection_bg']['background-image']; ?>); background-position: center; background-size: cover;" id="section0">
 
 
@@ -45,7 +45,7 @@ get_header();
 	</div>
 
 
-	<!-- ------------------------ -->
+	<!-- Section 02  -->
 	<div id="particles-js" class="section partical" style="background-color: <?php echo $katapub['asection2_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['asection2_bg']['background-image']; ?>); background-position: center; background-size: cover; position: relative;">
 
 
@@ -61,7 +61,7 @@ get_header();
 
 					
 					<div style="z-index:99999999999;" class="banner-content" id="">
-						<h1 class=" wow<?php echo $katapub['as2-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['as2-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['as2-heading-style']['font-size']; ?>;color:<?php echo $katapub['as2-heading-style']['color']; ?>; z-index:99999999999;"><?php echo $katapub['as2-heading']; ?>
+						<h1 class=" wow<?php echo $katapub['as2-heading-animation']; ?>" style="margin-top:25vh;font-weight:<?php echo $katapub['as2-heading-style']['font-weight']; ?>; font-size:<?php echo $katapub['as2-heading-style']['font-size']; ?>;color:<?php echo $katapub['as2-heading-style']['color']; ?>; z-index:99999999999;"><?php echo nl2br($katapub['as2-heading']); ?>
 
 
 
@@ -75,7 +75,7 @@ get_header();
 		</div>
 	</div>
 
-	<!-- ---------------------- -->
+	<!-- Section 03  -->
 	<div id="particles-js" class="section" style="background-color: #EAECED;">
 
 
@@ -126,23 +126,23 @@ get_header();
 
 				<div class="team" style="transform: translate(0px, 18vh); z-index:0000;">
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/team/01.png" alt="">
-						<h3>Emilie <br> Fillion</h3>
-						<p>Présidente <br> Directrice à la création</p>
+						<img src="<?php echo $katapub['as2-team1-photo']['url']; ?>" alt="">
+						<h3><?php echo nl2br($katapub['as2-team1-name']); ?></h3>
+						<p><?php echo nl2br($katapub['as2-team1-job']); ?></p>
 						<div class="btn-team"></div>
 					</div>
 
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/team/02.png" alt="">
-						<h3>Sylvain  <br> Thériault</h3>
-						<p>Directeur artistique <br> Designer graphique</p>
+						<img src="<?php echo $katapub['as2-team2-photo']['url']; ?>" alt="">
+						<h3><?php echo nl2br($katapub['as2-team2-name']); ?></h3>
+						<p><?php echo nl2br($katapub['as2-team2-job']); ?></p>
 						<div class="btn-team"></div>
 					</div>
 
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/team/03.png" alt="">
-						<h3>Ghislain  <br> Dufour</h3>
-						<p>Stratège  <br> com</p>
+						<img src="<?php echo $katapub['as2-team3-photo']['url']; ?>" alt="">
+						<h3><?php echo nl2br($katapub['as2-team3-name']); ?></h3>
+						<p><?php echo nl2br($katapub['as2-team3-job']); ?></p>
 						<div class="btn-team"></div>
 					</div>
 					
@@ -196,23 +196,23 @@ get_header();
 
 				<div class="team">
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/team/04.png" alt="">
-						<h3>Emilie <br> Fillion</h3>
-						<p>Présidente <br> Directrice à la création</p>
+						<img src="<?php echo $katapub['as2-team4-photo']['url']; ?>" alt="">
+						<h3><?php echo nl2br($katapub['as2-team4-name']); ?></h3>
+						<p><?php echo nl2br($katapub['as2-team4-job']); ?></p>
 						<div class="btn-team"></div>
 					</div>
 
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/team/05.png" alt="">
-						<h3>Emilie <br> Fillion</h3>
-						<p>Présidente <br> Directrice à la création</p>
+						<img src="<?php echo $katapub['as2-team5-photo']['url']; ?>" alt="">
+						<h3><?php echo nl2br($katapub['as2-team5-name']); ?></h3>
+						<p><?php echo nl2br($katapub['as2-team5-job']); ?></p>
 						<div class="btn-team"></div>
 					</div>
 
 					<div class="team-member">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/team/06.png" alt="">
-						<h3>Emilie <br> Fillion</h3>
-						<p>Présidente <br> Directrice à la création</p>
+						<img src="<?php echo $katapub['as2-team6-photo']['url']; ?>" alt="">
+						<h3><?php echo nl2br($katapub['as2-team6-name']); ?></h3>
+						<p><?php echo nl2br($katapub['as2-team6-job']); ?></p>
 						<div class="btn-team"></div>
 					</div>
 					
@@ -231,7 +231,7 @@ get_header();
 
 
 
-
+	<!-- Footer Section  -->
 	<div class="section" id="" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
 			<div class="container sec-footer " style="height:100vh;">

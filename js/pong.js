@@ -20,8 +20,8 @@ const ball = {
     x : canvas.width/2,
     y : canvas.height/2,
     radius : 10,
-    velocityX : 5,
-    velocityY : 5,
+    velocityX : 10,
+    velocityY : 10,
     speed : 7,
     color : "yellow"
 }
@@ -33,17 +33,17 @@ const user = {
     width : 10,
     height : 100,
     score : 0,
-    color : "skyblue"
+    color : "#34ABE1"
 }
 
 // COM Paddle
 const com = {
     x : canvas.width - 10, // - width of paddle
     y : (canvas.height - 100)/2, // -100 the height of paddle
-    width : 10,
+    width : 15,
     height : 100,
     score : 0,
-    color : "red"
+    color : "#34ABE1"
 }
 
 // NET

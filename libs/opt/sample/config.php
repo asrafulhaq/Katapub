@@ -330,7 +330,7 @@
                 'type'          => 'background',
             ],
             [
-                'title'         => 'Sectioin 2 Button Text',
+                'title'         => 'Section 2 Button Text',
                 'id'            => 'section2_btn-text',
                 'type'          => 'text',
                 'default'       => 'Projet'
@@ -340,6 +340,12 @@
                 'id'            => 'section2_btn-hover-text',
                 'type'          => 'text',
                 'default'       => 'On y va !'
+            ],
+            [
+                'title'         => 'Sectioin 2 Button Link',
+                'id'            => 'hs2-btn-link',
+                'type'          => 'text',
+                'default'       => ''
             ],
 
 
@@ -386,6 +392,14 @@
                 'id'            => 's3_grab_bg_hov',
                 'type'          => 'color',
                 'default'       => '#000'
+            ],
+            [
+                'title'         => 'Sectioin 3 Side Text',
+                'id'            => 'hs3-text-side',
+                'type'          => 'editor',
+                'default'       => 'SUIVEZ
+NOS PROJETS
+Nos projets'
             ],
 
 
@@ -456,7 +470,31 @@
                 'title'         => 'Sectioin 5 Heading',
                 'id'            => 's5_heading',
                 'type'          => 'editor',
-                'default'       => 'La balle est dans ton camp'
+                'default'       => '
+La balle
+est dans
+ton camp'
+                
+            ],
+            [
+                'title'         => 'Sectioin 5 Button Text',
+                'id'            => 'hs5-btn',
+                'type'          => 'text',
+                'default'       => 'Postuler'
+                
+            ],
+            [
+                'title'         => 'Sectioin 5 Button Hover Text',
+                'id'            => 'hs5-btn-hover',
+                'type'          => 'text',
+                'default'       => 'On y va !'
+                
+            ],
+            [
+                'title'         => 'Sectioin 5 Button Link',
+                'id'            => 'hs5-btn-link',
+                'type'          => 'text',
+                'default'       => ''
                 
             ],
            
@@ -511,8 +549,14 @@
                 'default'          => 'none'   
             ],
             [
-                'title'         => 'Agency Sectioin 1 Background Video URL',
+                'title'         => 'Sectioin 1 Video',
                 'id'            => 'asection_bg_video',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/agency bg1.mp4'
+            ],
+            [
+                'title'         => 'Sectioin 1 Mobile Video',
+                'id'            => 'as1-mvideo',
                 'type'          => 'text',
                 'default'       =>  get_template_directory_uri() . '/videos/agency bg1.mp4'
             ],
@@ -528,7 +572,10 @@
                 'title'         => 'Sectioin 2 Heading',
                 'id'            => 'as2-heading',
                 'type'          => 'editor',
-                'default'       =>  'Thinkers and creators of original concepts'
+                'default'       =>  'Penseurs et
+créateurs de
+concepts
+originaux'
             ],
 
             [
@@ -564,8 +611,14 @@
                 'default'          => 'none'   
             ],
             [
-                'title'         => 'Agency Sectioin 2 Background Video URL',
+                'title'         => 'Sectioin 2 Video',
                 'id'            => 'asection2_bg_video',
+                'type'          => 'text',
+
+            ],
+            [
+                'title'         => 'Sectioin 2 Mobile Video',
+                'id'            => 'as2-mvideo',
                 'type'          => 'text',
 
             ],
@@ -578,6 +631,180 @@
 
                 ]
             ],
+
+            // Team member 01
+
+            [
+                'title'         => 'Team Member 1 Photo',
+                'id'            => 'as2-team1-photo',
+                'type'          => 'media',
+                'default'       => [
+                    'url'           => get_template_directory_uri() . '/img/team/01.png'
+                ]
+
+            ],
+            [
+                'title'         => 'Team Member 1 Name',
+                'id'            => 'as2-team1-name',
+                'type'          => 'editor',
+                'default'       => 'Emilie
+Fillion'
+
+            ],
+            [
+                'title'         => 'Team Member 1 Job',
+                'id'            => 'as2-team1-job',
+                'type'          => 'editor',
+                'default'       => 'Présidente
+Directrice à la création'
+
+            ],
+
+
+            // Team member 02
+
+            [
+                'title'         => 'Team Member 2 Photo',
+                'id'            => 'as2-team2-photo',
+                'type'          => 'media',
+                'default'       => [
+                    'url'           => get_template_directory_uri() . '/img/team/02.png'
+                ]
+
+            ],
+            [
+                'title'         => 'Team Member 2 Name',
+                'id'            => 'as2-team2-name',
+                'type'          => 'editor',
+                'default'       => 'Sylvain
+Thériault'
+
+            ],
+            [
+                'title'         => 'Team Member 2 Job',
+                'id'            => 'as2-team2-job',
+                'type'          => 'editor',
+                'default'       => 'Directeur artistique
+Designer graphique'
+
+            ],
+
+            // Team member 03
+
+            [
+                'title'         => 'Team Member 3 Photo',
+                'id'            => 'as2-team3-photo',
+                'type'          => 'media',
+                'default'       => [
+                    'url'           => get_template_directory_uri() . '/img/team/03.png'
+                ]
+
+            ],
+            [
+                'title'         => 'Team Member 3 Name',
+                'id'            => 'as2-team3-name',
+                'type'          => 'editor',
+                'default'       => 'Ghislain
+Dufour '
+
+            ],
+            [
+                'title'         => 'Team Member 3 Job',
+                'id'            => 'as2-team3-job',
+                'type'          => 'editor',
+                'default'       => 'Stratège
+com'
+
+            ],
+
+
+            // Team member 04
+
+            [
+                'title'         => 'Team Member 4 Photo',
+                'id'            => 'as2-team4-photo',
+                'type'          => 'media',
+                'default'       => [
+                    'url'           => get_template_directory_uri() . '/img/team/04.png'
+                ]
+
+            ],
+            [
+                'title'         => 'Team Member 4 Name',
+                'id'            => 'as2-team4-name',
+                'type'          => 'editor',
+                'default'       => 'Ghislain
+Dufour '
+
+            ],
+            [
+                'title'         => 'Team Member 4 Job',
+                'id'            => 'as2-team4-job',
+                'type'          => 'editor',
+                'default'       => 'Stratège
+com'
+
+            ],
+
+
+            // Team member 05
+
+            [
+                'title'         => 'Team Member 5 Photo',
+                'id'            => 'as2-team5-photo',
+                'type'          => 'media',
+                'default'       => [
+                    'url'           => get_template_directory_uri() . '/img/team/05.png'
+                ]
+
+            ],
+            [
+                'title'         => 'Team Member 5 Name',
+                'id'            => 'as2-team5-name',
+                'type'          => 'editor',
+                'default'       => 'Ghislain
+Dufour '
+
+            ],
+            [
+                'title'         => 'Team Member 5 Job',
+                'id'            => 'as2-team5-job',
+                'type'          => 'editor',
+                'default'       => 'Stratège
+com'
+
+            ],
+
+
+            // Team member 06
+
+            [
+                'title'         => 'Team Member 6 Photo',
+                'id'            => 'as2-team6-photo',
+                'type'          => 'media',
+                'default'       => [
+                    'url'           => get_template_directory_uri() . '/img/team/06.png'
+                ]
+
+            ],
+            [
+                'title'         => 'Team Member 6 Name',
+                'id'            => 'as2-team6-name',
+                'type'          => 'editor',
+                'default'       => 'Ghislain
+Dufour '
+
+            ],
+            [
+                'title'         => 'Team Member 6 Job',
+                'id'            => 'as2-team6-job',
+                'type'          => 'editor',
+                'default'       => 'Stratège
+com'
+
+            ],
+
+
 
             
            
@@ -614,6 +841,23 @@ nous voyons
                         'font-weight'   => '700'
                 ],
             ],
+            [
+                'title'         => 'Sectioin 1 Heading Animation effect',
+                'id'            => 'ss1-heading-effect',
+                'type'          => 'select',
+                'options'       => [
+                    'none'                      => 'None',
+                    'fadeInDown'                => 'fadeInDown',
+                    'fadeInUp'                  => 'fadeInUp',
+                    'fadeInLeft'                => 'fadeInLeft',
+                    'fadeInRight'               => 'fadeInRight',
+                    'bounceInDown'              => 'bounceInDown',
+                    'bounceInUp'                => 'bounceInUp',
+                    'bounceInLeft'              => 'bounceInLeft',
+                    'bounceInRight'             => 'bounceInRight',
+                ],
+                'default'          => 'none'   
+            ],
 
             [
                 'title'         => 'Section 1 grabing',
@@ -622,7 +866,7 @@ nous voyons
                 'default'       =>  'Nos projets'
             ],
             [
-                'title'         => 'Section 1 Heading',
+                'title'         => 'Section 1 background',
                 'id'            => 'ss1-bg',
                 'type'          => 'background',
                 'default'       =>  [
@@ -643,6 +887,77 @@ nous voyons
                 'type'          => 'text',
                 
             ],
+            [
+                'title'         => 'Section 2 heading',
+                'id'            => 'ss2-heading',
+                'type'          => 'editor',
+                'default'       => 'Branding
+UX'
+                
+            ],
+
+            [
+                'title'         => 'List content 1 heading',
+                'id'            => 'lc1-heading',
+                'type'          => 'editor',
+                'default'       => 'Le
+concept
+utilisateur'
+                
+            ],
+            [
+                'title'         => 'List content 1 Content',
+                'id'            => 'lc1-content',
+                'type'          => 'editor',
+                'default'       => 'L’élaboration de l’idée. Les créateurs se rassemblent pour mettre au monde l’approche qu’il faut pour la bonne clientèle/rejoindre le bon public. Celle qui surprendra, accrochera et rendra l’expérience mémorable.'
+                
+            ],
+            [
+                'title'         => 'List content 2 heading',
+                'id'            => 'lc2-heading',
+                'type'          => 'editor',
+                'default'       => 'La
+création'
+                
+            ],
+            [
+                'title'         => 'List content 2 Content',
+                'id'            => 'lc2-content',
+                'type'          => 'editor',
+                'default'       => 'La concrétisation des idées. L’équipe multidisciplinaire produit l’expérience voulu. Le roupe orchestre la réalisation de l’expérience originale et ciblée dans les temps convenus.
+'
+                
+            ],
+            [
+                'title'         => 'List content 3 heading',
+                'id'            => 'lc3-heading',
+                'type'          => 'editor',
+                'default'       => 'La
+maquette'
+                
+            ],
+            [
+                'title'         => 'List content 3 Content',
+                'id'            => 'lc3-content',
+                'type'          => 'editor',
+                'default'       => 'La présentation de l’histoire. L’explication du produit fabriqué par notre équipe et l’évaluation conjointe pour approbation. Correctifs, changements, améliorations sont discutés pour une meilleure solution.'
+                
+            ],
+            [
+                'title'         => 'List content 4 heading',
+                'id'            => 'lc4-heading',
+                'type'          => 'editor',
+                'default'       => 'La
+finale'
+                
+            ],
+            [
+                'title'         => 'List content 4 Content',
+                'id'            => 'lc4-content',
+                'type'          => 'editor',
+                'default'       => 'La création percute. Elle est lancée dans l’espace des gens pour les surprendre et faire en sorte qu’ils reconnaissent la marque'
+                
+            ]
             
 
         ]
@@ -764,8 +1079,9 @@ pour moi.'
             [
                 'title'         => 'Section 1 Heading',
                 'id'            => 'cs1-heading',
-                'type'          => 'textarea',
-                'default'       =>  'On fait les avances, vous les premiers pas'
+                'type'          => 'editor',
+                'default'       =>  'On fait les avances,
+vous les premiers pas'
             ],
             [
                 'title'         => 'Sectioin 1 Heading style',
@@ -800,11 +1116,6 @@ pour moi.'
                 'default'          => 'none'   
             ],
             [
-                'title'         => 'Sectioin 1 background image',
-                'id'            => 'csection1_bg_video',
-                'type'          => 'text',
-            ],
-            [
                 'title'         => 'Sectioin 1 Background ( Image / Color )',
                 'id'            => 'csection1_bg',
                 'type'          => 'background',
@@ -818,8 +1129,10 @@ pour moi.'
             [
                 'title'         => 'Section 2 Heading',
                 'id'            => 'cs2-heading',
-                'type'          => 'textarea',
-                'default'       =>  'Combien de temps tu aurais besoin?'
+                'type'          => 'editor',
+                'default'       =>  'Combien
+de temps tu
+aurais besoin?'
             ],
             [
                 'title'         => 'Sectioin 2 Heading style',
@@ -837,29 +1150,6 @@ pour moi.'
                 
             ],
             [
-                'title'         => 'Sectioin 2 Heading Animation effect',
-                'id'            => 'cs2-heading-animation',
-                'type'          => 'select',
-                'options'       => [
-                    'none'                      => 'None',
-                    'fadeInDown'                => 'fadeInDown',
-                    'fadeInUp'                  => 'fadeInUp',
-                    'fadeInLeft'                => 'fadeInLeft',
-                    'fadeInRight'               => 'fadeInRight',
-                    'bounceInDown'              => 'bounceInDown',
-                    'bounceInUp'                => 'bounceInUp',
-                    'bounceInLeft'              => 'bounceInLeft',
-                    'bounceInRight'             => 'bounceInRight',
-                ],
-                'default'          => 'none'   
-            ],
-            [
-                'title'         => 'Sectioin 2 background Video',
-                'id'            => 'csection2_bg_video',
-                'type'          => 'text',
-
-            ],
-            [
                 'title'         => 'Sectioin 2 Background ( Image / Color )',
                 'id'            => 'csection2_bg',
                 'type'          => 'background',
@@ -868,19 +1158,29 @@ pour moi.'
                 ]
             ],
 
+            [
+                'title'         => 'Section 2  Side Text',
+                'id'            => 'cs2-side-text',
+                'type'          => 'editor',
+                'default'       =>  'POUR LES 6
+PROCHAINS MOIS'
+            ],
+
 
             [
                 'title'         => 'Section 3 Heading',
                 'id'            => 'cs3-heading',
-                'type'          => 'textarea',
-                'default'       =>  'On vous envoie une offre?'
+                'type'          => 'editor',
+                'default'       =>  'On vous
+envoie
+une offre?'
             ],
             [
                 'title'         => 'Sectioin 3 Heading style',
                 'id'            => 'cs3-heading-style',
                 'type'          => 'typography',
                 'default'       => [
-                    'color'         => '#202020',
+                    'color'         => '#FFF',
                     'font-size'     => '6.5',
                     'font-style'    => '700',
                     'font-family'   => 'Hind Siliguri',
@@ -889,6 +1189,37 @@ pour moi.'
                 ],
                 'units'         => 'em'
                 
+            ],
+
+            [
+                'title'         => 'Section 3 Sub Heading',
+                'id'            => 'cs3-subheading',
+                'type'          => 'editor',
+                'default'       =>  'Ma banque d\'heures'
+            ],
+            [
+                'title'         => 'circle 1 text',
+                'id'            => 'cs3-c1-text',
+                'type'          => 'text',
+                'default'       =>  '50'
+            ],
+            [
+                'title'         => 'circle 2 text',
+                'id'            => 'cs3-c2-text',
+                'type'          => 'text',
+                'default'       =>  '100'
+            ],
+            [
+                'title'         => 'circle 3 text',
+                'id'            => 'cs3-c3-text',
+                'type'          => 'text',
+                'default'       =>  '250'
+            ],
+            [
+                'title'         => 'circle 4 text',
+                'id'            => 'cs3-c4-text',
+                'type'          => 'text',
+                'default'       =>  'Aucune idee'
             ],
 
             [
@@ -905,6 +1236,383 @@ pour moi.'
                     'background-color'  => '#202020',
                 ]
             ],
+            
+
+
+        ]
+
+    ]);
+
+
+
+    Redux::setSection($opt_name, [
+        'title'             => 'Project Page settings',
+        'icon'              => 'el el-star-empty',
+        'fields'            => [
+            [
+                'title'     => 'Section 01 Background',
+                'type'      => 'background',
+                'id'        => 'ps1-bg',
+                'default'   => [
+                    'background-color'  => '#202020'
+                ]    
+            ],
+            [
+                'title'     => 'Section 01 Heading',
+                'type'      => 'editor',
+                'id'        => 'ps1-heading',
+                'default'   => 'Voici
+nos projets
+primés'   
+            ],
+            [
+                'title'     => 'Section 01 Heading Style',
+                'type'      => 'typography',
+                'id'        => 'ps1-heading-style',
+                'unit'      => 'em',
+                'default'   => [
+                    'color'  => '#FFF',
+                    'font-size'     => '6',
+                    'font-weight'   => '700',
+                    'font-family'   => 'Hind Siliguri'
+
+                ]    
+            ],
+            [
+                'title'         => 'Sectioin 1 Heading Animation',
+                'id'            => 'ps1-heading-animation',
+                'type'          => 'select',
+                'options'       => [
+                    'none'                      => 'None',
+                    'fadeInDown'            => 'fadeInDown',
+                    'fadeInUp'              => 'fadeInUp',
+                    'fadeInLeft'            => 'fadeInLeft',
+                    'fadeInRight'           => 'fadeInRight',
+                    'bounceInDown'            => 'bounceInDown',
+                    'bounceInUp'              => 'bounceInUp',
+                    'bounceInLeft'            => 'bounceInLeft',
+                    'bounceInRight'           => 'bounceInRight',
+                ],
+                'default'          => 'none'   
+            ],
+
+            [
+                'title'         => 'Section 02 Video',
+                'id'            => 'ps2-video',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/mohila.mp4'
+            ],
+            [
+                'title'         => 'Section 02 Mobile Video',
+                'id'            => 'ps2-mvideo',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/mohila.mp4'
+            ],
+            [
+                'title'         => 'Section 02 Brand',
+                'id'            => 'ps2-brand',
+                'type'          => 'media',
+                'default'       =>  [
+                    'url'       => get_template_directory_uri() . '/img/logoporteparole.png'
+                ]
+            ],
+            [
+                'title'         => 'Section 02 Button Text',
+                'id'            => 'ps2-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 02 Button Hover Text',
+                'id'            => 'ps2-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 02 Button Hover Text',
+                'id'            => 'ps2-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+
+            [
+                'title'         => 'Section 03 Video',
+                'id'            => 'ps3-video',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/eff04.mp4'
+            ],
+            [
+                'title'         => 'Section 03 Mobile Video',
+                'id'            => 'ps3-mvideo',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/eff04.mp4'
+            ],
+            [
+                'title'         => 'Section 03 Brand',
+                'id'            => 'ps3-brand',
+                'type'          => 'media',
+                'default'       =>  [
+                    'url'       => get_template_directory_uri() . '/img/logo5.png'
+                ]
+            ],
+            [
+                'title'         => 'Section 03 Button Text',
+                'id'            => 'ps3-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 03 Button Hover Text',
+                'id'            => 'ps3-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 03 Button Link',
+                'id'            => 'ps3-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+            [
+                'title'         => 'Section 04 Video',
+                'id'            => 'ps4-video',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/mohila2.mp4'
+            ],
+            [
+                'title'         => 'Section 04 Mobile Video',
+                'id'            => 'ps4-mvideo',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/mohila2.mp4'
+            ],
+            [
+                'title'         => 'Section 04 Brand',
+                'id'            => 'ps4-brand',
+                'type'          => 'media',
+                'default'       =>  [
+                    'url'       => get_template_directory_uri() . '/img/logoVF.png'
+                ]
+            ],
+            [
+                'title'         => 'Section 04 Button Text',
+                'id'            => 'ps4-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 04 Button Hover Text',
+                'id'            => 'ps4-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 04 Button Link',
+                'id'            => 'ps4-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+            [
+                'title'         => 'Section 05 Background ( image / Color )',
+                'id'            => 'ps5-bg',
+                'type'          => 'background',
+                'default'       =>  [
+                    'background-image'      => get_template_directory_uri() . '/img/alainImg.jpg'
+                ]
+            ],
+            [
+                'title'         => 'Section 05 Title Text',
+                'id'            => 'ps5-title',
+                'type'          => 'text',
+                'default'       =>  'ALAINDESROCHERS'
+            ],
+            [
+                'title'         => 'Section 05 Subtitle Text',
+                'id'            => 'ps5-subtitle',
+                'type'          => 'text',
+                'default'       =>  'DIRECTOR / RÉALISATEUR'
+            ],
+            [
+                'title'         => 'Section 05 Button Text',
+                'id'            => 'ps5-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 05 Button Hover Text',
+                'id'            => 'ps5-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 05 Button Link',
+                'id'            => 'ps5-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+            [
+                'title'         => 'Section 06 Video',
+                'id'            => 'ps6-video',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/paint.mp4'
+            ],
+            [
+                'title'         => 'Section 06 Mobile Video',
+                'id'            => 'ps6-mvideo',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/paint.mp4'
+            ],
+
+            [
+                'title'         => 'Section 06 Title',
+                'id'            => 'ps6-title',
+                'type'          => 'text',
+                'default'       => 'KRISTINE GIRARD'
+            ],
+            [
+                'title'         => 'Section 06 Button Text',
+                'id'            => 'ps6-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 06 Button Hover Text',
+                'id'            => 'ps6-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 06 Button Link',
+                'id'            => 'ps6-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+
+            [
+                'title'         => 'Section 07 Background',
+                'id'            => 'ps7-background',
+                'type'          => 'background',
+                'default'       =>  [
+                    'background-image'      => get_template_directory_uri() . '/img/Plante.jpg'
+                ]
+            ],
+            [
+                'title'         => 'Section 07 Button Text',
+                'id'            => 'ps7-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 07 Button Hover Text',
+                'id'            => 'ps7-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 07 Button Link',
+                'id'            => 'ps7-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+
+
+
+
+
+
+            [
+                'title'         => 'Section 08 Background',
+                'id'            => 'ps8-background',
+                'type'          => 'background',
+                'default'       =>  [
+                    'background-image'      => get_template_directory_uri() . '/img/festivale.png'
+                ]
+            ],
+            [
+                'title'         => 'Section 08 Button Text',
+                'id'            => 'ps8-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 08 Button Hover Text',
+                'id'            => 'ps8-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 08 Button Link',
+                'id'            => 'ps8-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+
+
+
+
+            [
+                'title'         => 'Section 09 Video',
+                'id'            => 'ps9-video',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/ama.mp4'
+            ],
+            [
+                'title'         => 'Section 09 Mobile Video',
+                'id'            => 'ps9-mvideo',
+                'type'          => 'text',
+                'default'       =>  get_template_directory_uri() . '/videos/ama.mp4'
+            ],
+            [
+                'title'         => 'Section 09 Button Text',
+                'id'            => 'ps9-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 09 Button Hover Text',
+                'id'            => 'ps9-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 09 Button Link',
+                'id'            => 'ps9-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+
+
+
+
+            [
+                'title'         => 'Section 10 Background',
+                'id'            => 'ps10-background',
+                'type'          => 'background',
+                'default'       =>  [
+                    'background-image'      => get_template_directory_uri() . '/img/headerExpo.jpg'
+                ]
+            ],
+            [
+                'title'         => 'Section 10 Button Text',
+                'id'            => 'ps10-btn',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 10 Button Hover Text',
+                'id'            => 'ps10-btn-hover',
+                'type'          => 'text',
+                'default'       =>  'Voir le Project'
+            ],
+            [
+                'title'         => 'Section 10 Button Link',
+                'id'            => 'ps10-btn-link',
+                'type'          => 'text',
+                'default'       =>  ''
+            ],
+
+            
+
+
 
         ]
 
@@ -931,7 +1639,9 @@ pour moi.'
                 'title'         => 'Footer Sub Heading',
                 'id'            => 'f-subheading',
                 'type'          => 'editor',
-                'default'       =>  'ON FAIT LES AVANCES VOUS LES PREMIERS PAS. CONTACT'
+                'default'       =>  'ON FAIT LES AVANCES
+VOUS LES PREMIERS PAS.
+<a href="#">CONTACT<a>'
             ],
 
             [
@@ -985,6 +1695,9 @@ pour moi.'
         ]
 
     ]);
+
+
+
 
     Redux::setSection($opt_name, [
         'title'             => 'Custom Code',

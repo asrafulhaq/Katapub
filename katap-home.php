@@ -15,7 +15,7 @@ get_header();
 <div id="fullpage">
 
 
-	
+	<!-- Section 01 -->
 	<div class="section " id="section0">
 		<video id="myVideo" loop muted data-autoplay>
 			<source src="<?php echo $katapub['section_bg_video']; ?>" >
@@ -38,6 +38,9 @@ get_header();
 		</div>
 	</div>
 
+
+
+	<!-- Section 02  -->
 	<div class="section" style="background-color: <?php echo $katapub['section2_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section2_bg']['background-image']; ?>); background-position: center; background-size: cover;" id="section0">
 		<?php if( !empty($katapub['section2_bg_video'] ) ) : ?>
 		<video id="myVideo" loop muted data-autoplay>
@@ -66,6 +69,9 @@ get_header();
 		</div>
 	</div>
 
+
+
+	<!-- Section 03 -->
 	<div class="section " style="background-color: <?php echo $katapub['section3_bg']['background-color']; ?> ; background-image: url(<?php echo $katapub['section3_bg']['background-image']; ?>); background-position: center center; background-size: cover;" id="section0">
 
 
@@ -98,7 +104,7 @@ get_header();
 				<div class="side-social" style="right: -82px; top:22%;">
 					
 					<div class="social-text">
-						<h2 style="color:#202020;">SUIVEZ <br> NOS PROJETS </h2>
+						<h2 style="color:#202020;"><?php echo nl2br($katapub['hs3-text-side']); ?></h2>
 					</div>
 					<div class="social-icon">
 						<ul>
@@ -154,6 +160,7 @@ get_header();
 	</div>
 
 
+	<!-- Section 04 -->
 	<div class="section" style="background-color: <?php echo $katapub['section4_bg']['background-color']; ?>; background-image: url(<?php echo $katapub['section4_bg']['background-image']; ?>); background-size: cover; background-position: center;" id="section0">
 
 		<?php if(!empty($katapub['s4_video_bg'])) : ?>
@@ -186,7 +193,7 @@ get_header();
 	</div>
 
 
-
+	<!-- Section 05 -->
 	<div class="section " id="section0" style="background-color: #202020;">
 		<div class="layer">
 			<div class="container rak-red" style="height:100vh;">
@@ -194,14 +201,14 @@ get_header();
 					
 					<div class="banner-content game-text">
 						<h1 style="margin-top:5vh;font-weight:700;font-size:6.5em; line-height:72px;color:#FFF;"><?php echo nl2br($katapub['s5_heading']); ?></h1>
-						<canvas id="pong" width="898" height="400"></canvas>
-						<div style="margin: 40vh auto 0px; width: 172%;" class="btn-right game-sec" >
+						<canvas id="pong" width="800" height="400" style="margin-left: 50px;"></canvas>
+						<div style="margin: 40vh auto 0px; width: 145%;" class="btn-right game-sec" >
 
-					    	<a href="#">
+					    	<a href="<?php echo $katapub['hs5-btn-link']; ?>">
 							    <div style="" class="buttonNew">       
 							        <div class="button-title">
-							            <span>Projet</span>
-							            <span>On y va !</span>
+							            <span><?php echo $katapub['hs5-btn']; ?></span>
+							            <span><?php echo $katapub['hs5-btn-hover']; ?></span>
 							        </div>
 							        <div class="button-icon"><span class="pjf-katapub-Rainbow"></span></div>
 							    </div>
@@ -216,6 +223,8 @@ get_header();
 	</div>
 
 
+
+	<!-- Footer  -->
 	<div class="section " id="section0" style="background-color: <?php echo $katapub['fbgc']; ?>;">
 		<div class="layer">
 			<div class="container sec-footer " style="height:100vh;">
@@ -226,6 +235,7 @@ get_header();
 					                <style>
 					                	.elastic canvas {
 					                		height: 100vh !important;
+
 					                	}
 					                	.p-col {
 					                		height: 100vh !important;
